@@ -1,0 +1,7 @@
+# conexion con SQL
+spring:
+  application:
+    name: card-service
+  cloud:
+    config:
+      import: configserver:http//:localhost:8888

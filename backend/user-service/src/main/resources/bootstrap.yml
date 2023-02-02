@@ -1,0 +1,41 @@
+server:
+  port: 9091
+
+eureka:
+  client:
+    enabled: true
+
+spring:
+  application:
+    name: user-service
+  cloud:
+    config:
+      import: configserver:http//:localhost:8888
+#      enabled: false
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: ${d-h-m.keycloak.serverUrl}/realms/${d-h-m.keycloak.realm}
+          jwk-set-uri: ${d-h-m.keycloak.serverUrl}/realms/${d-h-m.keycloak.realm}/protocol/openid-connect/certs
+        client:
+          registration:
+            users-client:
+              provider: keycloak
+              client-id: ${d-h-m.keycloak.clientId}
+              client-secret: ${d-h-m.keycloak.clientSecret}
+              authorization-grant-type: client_credentials
+            provider:
+              users-client:
+                end-session-uri: ${d-h-m.keycloak.serverUrl}/realms/${d-h-m.keycloak.realm}/protocol/openid-connect/logout
+                issuer-uri: ${d-h-m.keycloak.serverUrl}/realms/${d-h-m.keycloak.realm}
+                jwk-set-uri: ${d-h-m.keycloak.serverUrl}/realms/${d-h-m.keycloak.realm}/protocol/openid-connect/certs
+
+
+d-h-m:
+  keycloak:
+    realm: dmh
+    clientId: users-client
+    clientSecret: teOj64LjSghDICHfjnAQf6AZDZ0IhrwI
+    serverUrl: http://localhost:8080
+    tokenEndpoint: ${d-h-m.keycloak.serverUrl}/realms/${d-h-m.keycloak.realm}/protocol/openid-connect/token

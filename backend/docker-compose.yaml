@@ -1,0 +1,72 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: grupo9
+      MYSQL_DATABASE: dhmoney
+      MYSQL_USER: grupo9
+      MYSQL_PASSWORD: grupo9
+    ports:
+      - 3306:3306
+  config-service:
+    build: config-service
+    container_name: 'config-service'
+    ports:
+      - '8888:8888'
+  eureka-service:
+    build: eureka-service
+    container_name: 'eureka-service'
+    ports:
+      - '8761:8761'
+    depends_on:
+      - config-service
+    restart: on-failure
+  account-service:
+    build: account-service
+    container_name: 'account-service'
+    ports:
+      - '8061:8061'
+    depends_on:
+      - config-service
+      - eureka-service
+    restart: on-failure
+  card-service:
+    build: card-service
+    container_name: 'card-service'
+    ports:
+      - '8061:8061'
+    depends_on:
+      - config-service
+      - eureka-service
+    restart: on-failure
+  transaction-service:
+    build: transaction-service
+    container_name: 'transaction-service'
+    ports:
+      - '8061:8061'
+    depends_on:
+      - config-service
+      - eureka-service
+    restart: on-failure
+  user-service:
+    build: user-service
+    container_name: 'user-service'
+    ports:
+      - '8061:8061'
+    depends_on:
+      - config-service
+      - eureka-service
+    restart: on-failure
+  gateway-service:
+    build: gateway-service
+    container_name: 'gateway-service'
+    ports:
+      - '8080:8080'
+    depends_on:
+      - config-service
+      - eureka-service
+    restart: on-failure
