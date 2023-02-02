@@ -1,0 +1,1676 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 15 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
+              <span class="suite-name border-failed">Surefire suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Surefire_suite" class="navigator-link ">
+                    <span>[unset file name]</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Surefire_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Surefire_suite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Surefire_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Surefire_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Surefire_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Surefire_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">54 methods, 15 failed,   39 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Surefire_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CCardTests" class="method navigator-link" hash-for-method="fieldsNotEmptyGetCardByIDResponse">fieldsNotEmptyGetCardByIDResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="BUserTests" class="method navigator-link" hash-for-method="fieldsNotEmptyGetUserByIDResponse">fieldsNotEmptyGetUserByIDResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="BUserTests" class="method navigator-link" hash-for-method="fieldsNotNullGetUserByIDResponse">fieldsNotNullGetUserByIDResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="BUserTests" class="method navigator-link" hash-for-method="patchCvuById">patchCvuById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="DTransactionsTests" class="method navigator-link" hash-for-method="postTransactionWithNullValues">postTransactionWithNullValues</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="DTransactionsTests" class="method navigator-link" hash-for-method="postTransactionWithoutAccountDestinyIdValue">postTransactionWithoutAccountDestinyIdValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="DTransactionsTests" class="method navigator-link" hash-for-method="postTransactionWithoutAccountOriginIdValue">postTransactionWithoutAccountOriginIdValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="DTransactionsTests" class="method navigator-link" hash-for-method="postTransactionWithoutAmountValue">postTransactionWithoutAmountValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="DTransactionsTests" class="method navigator-link" hash-for-method="postTransactionWithoutDateValue">postTransactionWithoutDateValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="DTransactionsTests" class="method navigator-link" hash-for-method="postTransactionWithoutDetailValue">postTransactionWithoutDetailValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="DTransactionsTests" class="method navigator-link" hash-for-method="postTransactionWithoutTypeValue">postTransactionWithoutTypeValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CCardTests" class="method navigator-link" hash-for-method="putCardWithEmptyValuesId">putCardWithEmptyValuesId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CCardTests" class="method navigator-link" hash-for-method="putCardWithoutAccountIdById">putCardWithoutAccountIdById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CCardTests" class="method navigator-link" hash-for-method="putCardWithoutTypeById">putCardWithoutTypeById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="ARegisterTests" class="method navigator-link" hash-for-method="registerWithoutFirstNameResponse">registerWithoutFirstNameResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods passed suite-Surefire_suite"> (hide)</a> <!-- hide-methods passed suite-Surefire_suite -->
+                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods passed suite-Surefire_suite"> (show)</a> <!-- show-methods passed suite-Surefire_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Surefire_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CCardTests" class="method navigator-link" hash-for-method="contentTypeOnGetAllCardsResponse">contentTypeOnGetAllCardsResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="BUserTests" class="method navigator-link" hash-for-method="contentTypeOnGetAllUsersResponse">contentTypeOnGetAllUsersResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CCardTests" class="method navigator-link" hash-for-method="contentTypeOnGetCardByIDResponse">contentTypeOnGetCardByIDResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="BUserTests" class="method navigator-link" hash-for-method="contentTypeOnGetUserByIDResponse">contentTypeOnGetUserByIDResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="DTransactionsTests" class="method navigator-link" hash-for-method="deleteTransactionByIdStatusCode">deleteTransactionByIdStatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CCardTests" class="method navigator-link" hash-for-method="fieldsNotEmptyGetAllCardsResponse">fieldsNotEmptyGetAllCardsResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="BUserTests" class="method navigator-link" hash-for-method="fieldsNotEmptyGetAllUsersResponse">fieldsNotEmptyGetAllUsersResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CCardTests" class="method navigator-link" hash-for-method="fieldsNotNullGetAllUsersResponse">fieldsNotNullGetAllUsersResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="BUserTests" class="method navigator-link" hash-for-method="fieldsNotNullGetAllUsersResponse">fieldsNotNullGetAllUsersResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CCardTests" class="method navigator-link" hash-for-method="fieldsNotNullGetCardByIDResponse">fieldsNotNullGetCardByIDResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="DTransactionsTests" class="method navigator-link" hash-for-method="getTransactionResponseNotEmpty">getTransactionResponseNotEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="DTransactionsTests" class="method navigator-link" hash-for-method="getTransactionResponseNotNull">getTransactionResponseNotNull</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="DTransactionsTests" class="method navigator-link" hash-for-method="getTransactionStatusCode">getTransactionStatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CCardTests" class="method navigator-link" hash-for-method="headersOnGetAllCardsResponse">headersOnGetAllCardsResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="BUserTests" class="method navigator-link" hash-for-method="headersOnGetAllUsersResponse">headersOnGetAllUsersResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CCardTests" class="method navigator-link" hash-for-method="httpStatus200OnGetAllCards">httpStatus200OnGetAllCards</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="BUserTests" class="method navigator-link" hash-for-method="httpStatus200OnGetAllUsers">httpStatus200OnGetAllUsers</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CCardTests" class="method navigator-link" hash-for-method="httpStatus200OnGetCardById">httpStatus200OnGetCardById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="BUserTests" class="method navigator-link" hash-for-method="httpStatus200OnGetUserById">httpStatus200OnGetUserById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="EAccountsTests" class="method navigator-link" hash-for-method="patchAliasByAccountId">patchAliasByAccountId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="BUserTests" class="method navigator-link" hash-for-method="patchAliasById">patchAliasById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="BUserTests" class="method navigator-link" hash-for-method="patchEmailById">patchEmailById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="EAccountsTests" class="method navigator-link" hash-for-method="patchEmptyAliasByAccountId">patchEmptyAliasByAccountId</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="BUserTests" class="method navigator-link" hash-for-method="patchFirstNameById">patchFirstNameById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="BUserTests" class="method navigator-link" hash-for-method="patchLastNameById">patchLastNameById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="BUserTests" class="method navigator-link" hash-for-method="patchPasswordById">patchPasswordById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="BUserTests" class="method navigator-link" hash-for-method="patchUsernameById">patchUsernameById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CCardTests" class="method navigator-link" hash-for-method="postCardWithAccountIdNullValue">postCardWithAccountIdNullValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CCardTests" class="method navigator-link" hash-for-method="postCardWithNullValues">postCardWithNullValues</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CCardTests" class="method navigator-link" hash-for-method="postCardWithTypeNullValue">postCardWithTypeNullValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CCardTests" class="method navigator-link" hash-for-method="postCardWithoutAccountIdValue">postCardWithoutAccountIdValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CCardTests" class="method navigator-link" hash-for-method="postCardWithoutTypeValue">postCardWithoutTypeValue</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="DTransactionsTests" class="method navigator-link" hash-for-method="postTransactionResponseNotEmpty">postTransactionResponseNotEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="DTransactionsTests" class="method navigator-link" hash-for-method="postTransactionResponseNotNull">postTransactionResponseNotNull</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="DTransactionsTests" class="method navigator-link" hash-for-method="postTransactionStatusCode">postTransactionStatusCode</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="CCardTests" class="method navigator-link" hash-for-method="putCardById">putCardById</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="ARegisterTests" class="method navigator-link" hash-for-method="registerOkValidateResponse">registerOkValidateResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="ARegisterTests" class="method navigator-link" hash-for-method="registerWithoutDniResponse">registerWithoutDniResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="ARegisterTests" class="method navigator-link" hash-for-method="registerWithoutLastNameResponse">registerWithoutLastNameResponse</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Surefire_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">DTransactionsTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="postTransactionWithNullValues">
+                  </a> <!-- postTransactionWithNullValues -->
+                  <span class="method-name">postTransactionWithNullValues</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at DTransactionsTests.postTransactionWithNullValues(DTransactionsTests.java:51)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postTransactionWithoutAccountDestinyIdValue">
+                  </a> <!-- postTransactionWithoutAccountDestinyIdValue -->
+                  <span class="method-name">postTransactionWithoutAccountDestinyIdValue</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at DTransactionsTests.postTransactionWithoutAccountDestinyIdValue(DTransactionsTests.java:71)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postTransactionWithoutAccountOriginIdValue">
+                  </a> <!-- postTransactionWithoutAccountOriginIdValue -->
+                  <span class="method-name">postTransactionWithoutAccountOriginIdValue</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at DTransactionsTests.postTransactionWithoutAccountOriginIdValue(DTransactionsTests.java:91)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postTransactionWithoutAmountValue">
+                  </a> <!-- postTransactionWithoutAmountValue -->
+                  <span class="method-name">postTransactionWithoutAmountValue</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at DTransactionsTests.postTransactionWithoutAmountValue(DTransactionsTests.java:112)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postTransactionWithoutDateValue">
+                  </a> <!-- postTransactionWithoutDateValue -->
+                  <span class="method-name">postTransactionWithoutDateValue</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at DTransactionsTests.postTransactionWithoutDateValue(DTransactionsTests.java:132)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postTransactionWithoutDetailValue">
+                  </a> <!-- postTransactionWithoutDetailValue -->
+                  <span class="method-name">postTransactionWithoutDetailValue</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at DTransactionsTests.postTransactionWithoutDetailValue(DTransactionsTests.java:152)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postTransactionWithoutTypeValue">
+                  </a> <!-- postTransactionWithoutTypeValue -->
+                  <span class="method-name">postTransactionWithoutTypeValue</span>
+                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
+Expected status code &lt;400&gt; but was &lt;200&gt;.
+
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+	at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+	at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+	at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+	at DTransactionsTests.postTransactionWithoutTypeValue(DTransactionsTests.java:172)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 35 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">CCardTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fieldsNotEmptyGetCardByIDResponse">
+                  </a> <!-- fieldsNotEmptyGetCardByIDResponse -->
+                  <span class="method-name">fieldsNotEmptyGetCardByIDResponse</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [false] but found [true]
+	at CCardTests.fieldsNotEmptyGetCardByIDResponse(CCardTests.java:135)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="putCardWithEmptyValuesId">
+                  </a> <!-- putCardWithEmptyValuesId -->
+                  <span class="method-name">putCardWithEmptyValuesId</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at CCardTests.putCardWithEmptyValuesId(CCardTests.java:221)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="putCardWithoutAccountIdById">
+                  </a> <!-- putCardWithoutAccountIdById -->
+                  <span class="method-name">putCardWithoutAccountIdById</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at CCardTests.putCardWithoutAccountIdById(CCardTests.java:188)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="putCardWithoutTypeById">
+                  </a> <!-- putCardWithoutTypeById -->
+                  <span class="method-name">putCardWithoutTypeById</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at CCardTests.putCardWithoutTypeById(CCardTests.java:204)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">ARegisterTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithoutFirstNameResponse">
+                  </a> <!-- registerWithoutFirstNameResponse -->
+                  <span class="method-name">registerWithoutFirstNameResponse</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at ARegisterTests.registerWithoutFirstNameResponse(ARegisterTests.java:79)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">BUserTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fieldsNotEmptyGetUserByIDResponse">
+                  </a> <!-- fieldsNotEmptyGetUserByIDResponse -->
+                  <span class="method-name">fieldsNotEmptyGetUserByIDResponse</span>
+                  <div class="stack-trace">java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;account&quot; (class Data.Factory.User), not marked as ignorable (10 known properties: &quot;alias&quot;, &quot;lastName&quot;, &quot;cvu&quot;, &quot;username&quot;, &quot;phoneNumber&quot;, &quot;firstName&quot;, &quot;email&quot;, &quot;dni&quot;, &quot;password&quot;, &quot;id&quot;])
+ at [Source: (String)&quot;{&quot;id&quot;:4,&quot;firstName&quot;:&quot;Marcelo Javier&quot;,&quot;lastName&quot;:&quot;Mendoza Roger&quot;,&quot;dni&quot;:&quot;11111111&quot;,&quot;email&quot;:&quot;mmendoza@mail.com&quot;,&quot;phoneNumber&quot;:&quot;47717085&quot;,&quot;username&quot;:&quot;mmroger&quot;,&quot;cvu&quot;:&quot;6395077378020337851477&quot;,&quot;alias&quot;:&quot;baul.cinco.tarjeta&quot;,&quot;account&quot;:null}&quot;; line: 1, column: 230] (through reference chain: Data.Factory.User[&quot;account&quot;])
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
+	at io.restassured.internal.path.json.mapping.JsonObjectDeserializer.deserializeWithJackson2(JsonObjectDeserializer.java:93)
+	at io.restassured.internal.path.json.mapping.JsonObjectDeserializer.deserialize(JsonObjectDeserializer.java:53)
+	at io.restassured.path.json.JsonPath.jsonStringToObject(JsonPath.java:1093)
+	at io.restassured.path.json.JsonPath.getObject(JsonPath.java:560)
+	at BUserTests.fieldsNotEmptyGetUserByIDResponse(BUserTests.java:138)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;account&quot; (class Data.Factory.User), not marked as ignorable (10 known properties: &quot;alias&quot;, &quot;lastName&quot;, &quot;cvu&quot;, &quot;username&quot;, &quot;phoneNumber&quot;, &quot;firstName&quot;, &quot;email&quot;, &quot;dni&quot;, &quot;password&quot;, &quot;id&quot;])
+ at [Source: (String)&quot;{&quot;id&quot;:4,&quot;firstName&quot;:&quot;Marcelo Javier&quot;,&quot;lastName&quot;:&quot;Mendoza Roger&quot;,&quot;dni&quot;:&quot;11111111&quot;,&quot;email&quot;:&quot;mmendoza@mail.com&quot;,&quot;phoneNumber&quot;:&quot;47717085&quot;,&quot;username&quot;:&quot;mmroger&quot;,&quot;cvu&quot;:&quot;6395077378020337851477&quot;,&quot;alias&quot;:&quot;baul.cinco.tarjeta&quot;,&quot;account&quot;:null}&quot;; line: 1, column: 230] (through reference chain: Data.Factory.User[&quot;account&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1127)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2023)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1700)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1678)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:320)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
+	... 35 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fieldsNotNullGetUserByIDResponse">
+                  </a> <!-- fieldsNotNullGetUserByIDResponse -->
+                  <span class="method-name">fieldsNotNullGetUserByIDResponse</span>
+                  <div class="stack-trace">java.lang.RuntimeException: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;account&quot; (class Data.Factory.User), not marked as ignorable (10 known properties: &quot;alias&quot;, &quot;lastName&quot;, &quot;cvu&quot;, &quot;username&quot;, &quot;phoneNumber&quot;, &quot;firstName&quot;, &quot;email&quot;, &quot;dni&quot;, &quot;password&quot;, &quot;id&quot;])
+ at [Source: (String)&quot;{&quot;id&quot;:4,&quot;firstName&quot;:&quot;Marcelo Javier&quot;,&quot;lastName&quot;:&quot;Mendoza Roger&quot;,&quot;dni&quot;:&quot;11111111&quot;,&quot;email&quot;:&quot;mmendoza@mail.com&quot;,&quot;phoneNumber&quot;:&quot;47717085&quot;,&quot;username&quot;:&quot;mmroger&quot;,&quot;cvu&quot;:&quot;6395077378020337851477&quot;,&quot;alias&quot;:&quot;baul.cinco.tarjeta&quot;,&quot;account&quot;:null}&quot;; line: 1, column: 230] (through reference chain: Data.Factory.User[&quot;account&quot;])
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:30)
+	at io.restassured.internal.path.json.mapping.JsonObjectDeserializer.deserializeWithJackson2(JsonObjectDeserializer.java:93)
+	at io.restassured.internal.path.json.mapping.JsonObjectDeserializer.deserialize(JsonObjectDeserializer.java:53)
+	at io.restassured.path.json.JsonPath.jsonStringToObject(JsonPath.java:1093)
+	at io.restassured.path.json.JsonPath.getObject(JsonPath.java:560)
+	at BUserTests.fieldsNotNullGetUserByIDResponse(BUserTests.java:156)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;account&quot; (class Data.Factory.User), not marked as ignorable (10 known properties: &quot;alias&quot;, &quot;lastName&quot;, &quot;cvu&quot;, &quot;username&quot;, &quot;phoneNumber&quot;, &quot;firstName&quot;, &quot;email&quot;, &quot;dni&quot;, &quot;password&quot;, &quot;id&quot;])
+ at [Source: (String)&quot;{&quot;id&quot;:4,&quot;firstName&quot;:&quot;Marcelo Javier&quot;,&quot;lastName&quot;:&quot;Mendoza Roger&quot;,&quot;dni&quot;:&quot;11111111&quot;,&quot;email&quot;:&quot;mmendoza@mail.com&quot;,&quot;phoneNumber&quot;:&quot;47717085&quot;,&quot;username&quot;:&quot;mmroger&quot;,&quot;cvu&quot;:&quot;6395077378020337851477&quot;,&quot;alias&quot;:&quot;baul.cinco.tarjeta&quot;,&quot;account&quot;:null}&quot;; line: 1, column: 230] (through reference chain: Data.Factory.User[&quot;account&quot;])
+	at com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException.from(UnrecognizedPropertyException.java:61)
+	at com.fasterxml.jackson.databind.DeserializationContext.handleUnknownProperty(DeserializationContext.java:1127)
+	at com.fasterxml.jackson.databind.deser.std.StdDeserializer.handleUnknownProperty(StdDeserializer.java:2023)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownProperty(BeanDeserializerBase.java:1700)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializerBase.handleUnknownVanilla(BeanDeserializerBase.java:1678)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.vanillaDeserialize(BeanDeserializer.java:320)
+	at com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:177)
+	at com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)
+	at com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)
+	at com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3629)
+	at io.restassured.internal.path.json.mapping.JsonPathJackson2ObjectDeserializer.deserialize(JsonPathJackson2ObjectDeserializer.java:28)
+	... 35 more
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="patchCvuById">
+                  </a> <!-- patchCvuById -->
+                  <span class="method-name">patchCvuById</span>
+                  <div class="stack-trace">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1002)
+	at io.restassured.path.json.JsonPath$4.doParseWith(JsonPath.java:967)
+	at io.restassured.path.json.JsonPath$JsonParser.parseWith(JsonPath.java:1047)
+	at io.restassured.path.json.JsonPath.getJsonObject(JsonPath.java:1009)
+	at io.restassured.path.json.JsonPath.getObject(JsonPath.java:546)
+	at BUserTests.patchCvuById(BUserTests.java:257)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: java.lang.IllegalArgumentException: The JSON input text should neither be null nor empty.
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:58)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.path.json.ConfigurableJsonSlurper.parseText(ConfigurableJsonSlurper.groovy:80)
+	at io.restassured.path.json.JsonPath$4$1.method(JsonPath.java:965)
+	at io.restassured.path.json.JsonPath$ExceptionCatcher.invoke(JsonPath.java:1000)
+	... 35 more
+... Removed 33 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">DTransactionsTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteTransactionByIdStatusCode">
+                  </a> <!-- deleteTransactionByIdStatusCode -->
+                  <span class="method-name">deleteTransactionByIdStatusCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTransactionResponseNotEmpty">
+                  </a> <!-- getTransactionResponseNotEmpty -->
+                  <span class="method-name">getTransactionResponseNotEmpty</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTransactionResponseNotNull">
+                  </a> <!-- getTransactionResponseNotNull -->
+                  <span class="method-name">getTransactionResponseNotNull</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="getTransactionStatusCode">
+                  </a> <!-- getTransactionStatusCode -->
+                  <span class="method-name">getTransactionStatusCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postTransactionResponseNotEmpty">
+                  </a> <!-- postTransactionResponseNotEmpty -->
+                  <span class="method-name">postTransactionResponseNotEmpty</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postTransactionResponseNotNull">
+                  </a> <!-- postTransactionResponseNotNull -->
+                  <span class="method-name">postTransactionResponseNotNull</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postTransactionStatusCode">
+                  </a> <!-- postTransactionStatusCode -->
+                  <span class="method-name">postTransactionStatusCode</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">CCardTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="contentTypeOnGetAllCardsResponse">
+                  </a> <!-- contentTypeOnGetAllCardsResponse -->
+                  <span class="method-name">contentTypeOnGetAllCardsResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contentTypeOnGetCardByIDResponse">
+                  </a> <!-- contentTypeOnGetCardByIDResponse -->
+                  <span class="method-name">contentTypeOnGetCardByIDResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fieldsNotEmptyGetAllCardsResponse">
+                  </a> <!-- fieldsNotEmptyGetAllCardsResponse -->
+                  <span class="method-name">fieldsNotEmptyGetAllCardsResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fieldsNotNullGetAllUsersResponse">
+                  </a> <!-- fieldsNotNullGetAllUsersResponse -->
+                  <span class="method-name">fieldsNotNullGetAllUsersResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fieldsNotNullGetCardByIDResponse">
+                  </a> <!-- fieldsNotNullGetCardByIDResponse -->
+                  <span class="method-name">fieldsNotNullGetCardByIDResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="headersOnGetAllCardsResponse">
+                  </a> <!-- headersOnGetAllCardsResponse -->
+                  <span class="method-name">headersOnGetAllCardsResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="httpStatus200OnGetAllCards">
+                  </a> <!-- httpStatus200OnGetAllCards -->
+                  <span class="method-name">httpStatus200OnGetAllCards</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="httpStatus200OnGetCardById">
+                  </a> <!-- httpStatus200OnGetCardById -->
+                  <span class="method-name">httpStatus200OnGetCardById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postCardWithAccountIdNullValue">
+                  </a> <!-- postCardWithAccountIdNullValue -->
+                  <span class="method-name">postCardWithAccountIdNullValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postCardWithNullValues">
+                  </a> <!-- postCardWithNullValues -->
+                  <span class="method-name">postCardWithNullValues</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postCardWithTypeNullValue">
+                  </a> <!-- postCardWithTypeNullValue -->
+                  <span class="method-name">postCardWithTypeNullValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postCardWithoutAccountIdValue">
+                  </a> <!-- postCardWithoutAccountIdValue -->
+                  <span class="method-name">postCardWithoutAccountIdValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="postCardWithoutTypeValue">
+                  </a> <!-- postCardWithoutTypeValue -->
+                  <span class="method-name">postCardWithoutTypeValue</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="putCardById">
+                  </a> <!-- putCardById -->
+                  <span class="method-name">putCardById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">EAccountsTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="patchAliasByAccountId">
+                  </a> <!-- patchAliasByAccountId -->
+                  <span class="method-name">patchAliasByAccountId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="patchEmptyAliasByAccountId">
+                  </a> <!-- patchEmptyAliasByAccountId -->
+                  <span class="method-name">patchEmptyAliasByAccountId</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">ARegisterTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerOkValidateResponse">
+                  </a> <!-- registerOkValidateResponse -->
+                  <span class="method-name">registerOkValidateResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithoutDniResponse">
+                  </a> <!-- registerWithoutDniResponse -->
+                  <span class="method-name">registerWithoutDniResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerWithoutLastNameResponse">
+                  </a> <!-- registerWithoutLastNameResponse -->
+                  <span class="method-name">registerWithoutLastNameResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">BUserTests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="contentTypeOnGetAllUsersResponse">
+                  </a> <!-- contentTypeOnGetAllUsersResponse -->
+                  <span class="method-name">contentTypeOnGetAllUsersResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="contentTypeOnGetUserByIDResponse">
+                  </a> <!-- contentTypeOnGetUserByIDResponse -->
+                  <span class="method-name">contentTypeOnGetUserByIDResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fieldsNotEmptyGetAllUsersResponse">
+                  </a> <!-- fieldsNotEmptyGetAllUsersResponse -->
+                  <span class="method-name">fieldsNotEmptyGetAllUsersResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="fieldsNotNullGetAllUsersResponse">
+                  </a> <!-- fieldsNotNullGetAllUsersResponse -->
+                  <span class="method-name">fieldsNotNullGetAllUsersResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="headersOnGetAllUsersResponse">
+                  </a> <!-- headersOnGetAllUsersResponse -->
+                  <span class="method-name">headersOnGetAllUsersResponse</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="httpStatus200OnGetAllUsers">
+                  </a> <!-- httpStatus200OnGetAllUsers -->
+                  <span class="method-name">httpStatus200OnGetAllUsers</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="httpStatus200OnGetUserById">
+                  </a> <!-- httpStatus200OnGetUserById -->
+                  <span class="method-name">httpStatus200OnGetUserById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="patchAliasById">
+                  </a> <!-- patchAliasById -->
+                  <span class="method-name">patchAliasById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="patchEmailById">
+                  </a> <!-- patchEmailById -->
+                  <span class="method-name">patchEmailById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="patchFirstNameById">
+                  </a> <!-- patchFirstNameById -->
+                  <span class="method-name">patchFirstNameById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="patchLastNameById">
+                  </a> <!-- patchLastNameById -->
+                  <span class="method-name">patchLastNameById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="patchPasswordById">
+                  </a> <!-- patchPasswordById -->
+                  <span class="method-name">patchPasswordById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="patchUsernameById">
+                  </a> <!-- patchUsernameById -->
+                  <span class="method-name">patchUsernameById</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+        </div> <!-- panel Surefire_suite -->
+        <div panel-name="test-xml-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;ARegisterTests&quot;/&gt;
+      &lt;class name=&quot;BUserTests&quot;/&gt;
+      &lt;class name=&quot;CCardTests&quot;/&gt;
+      &lt;class name=&quot;DTransactionsTests&quot;/&gt;
+      &lt;class name=&quot;EAccountsTests&quot;/&gt;
+      &lt;class name=&quot;Model.BaseTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Surefire test --&gt;
+&lt;/suite&gt; &lt;!-- Surefire suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Surefire test (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Surefire_suite');
+function tableData_Surefire_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(54);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'registerOkValidateResponse')
+data.setCell(0, 2, 'ARegisterTests')
+data.setCell(0, 3, 3186);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'fieldsNotEmptyGetAllUsersResponse')
+data.setCell(1, 2, 'BUserTests')
+data.setCell(1, 3, 740);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'getTransactionResponseNotEmpty')
+data.setCell(2, 2, 'DTransactionsTests')
+data.setCell(2, 3, 409);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'getTransactionResponseNotNull')
+data.setCell(3, 2, 'DTransactionsTests')
+data.setCell(3, 3, 305);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'registerWithoutLastNameResponse')
+data.setCell(4, 2, 'ARegisterTests')
+data.setCell(4, 3, 198);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'patchAliasByAccountId')
+data.setCell(5, 2, 'EAccountsTests')
+data.setCell(5, 3, 178);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'postTransactionWithNullValues')
+data.setCell(6, 2, 'DTransactionsTests')
+data.setCell(6, 3, 178);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'contentTypeOnGetUserByIDResponse')
+data.setCell(7, 2, 'BUserTests')
+data.setCell(7, 3, 159);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'contentTypeOnGetAllCardsResponse')
+data.setCell(8, 2, 'CCardTests')
+data.setCell(8, 3, 124);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'deleteTransactionByIdStatusCode')
+data.setCell(9, 2, 'DTransactionsTests')
+data.setCell(9, 3, 123);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'postTransactionResponseNotNull')
+data.setCell(10, 2, 'DTransactionsTests')
+data.setCell(10, 3, 101);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'registerWithoutFirstNameResponse')
+data.setCell(11, 2, 'ARegisterTests')
+data.setCell(11, 3, 99);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'postTransactionWithoutAccountOriginIdValue')
+data.setCell(12, 2, 'DTransactionsTests')
+data.setCell(12, 3, 96);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'patchCvuById')
+data.setCell(13, 2, 'BUserTests')
+data.setCell(13, 3, 94);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'registerWithoutDniResponse')
+data.setCell(14, 2, 'ARegisterTests')
+data.setCell(14, 3, 92);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'patchLastNameById')
+data.setCell(15, 2, 'BUserTests')
+data.setCell(15, 3, 82);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'patchFirstNameById')
+data.setCell(16, 2, 'BUserTests')
+data.setCell(16, 3, 81);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'fieldsNotNullGetAllUsersResponse')
+data.setCell(17, 2, 'BUserTests')
+data.setCell(17, 3, 80);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'contentTypeOnGetAllUsersResponse')
+data.setCell(18, 2, 'BUserTests')
+data.setCell(18, 3, 80);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'postTransactionWithoutDetailValue')
+data.setCell(19, 2, 'DTransactionsTests')
+data.setCell(19, 3, 80);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'postTransactionWithoutDateValue')
+data.setCell(20, 2, 'DTransactionsTests')
+data.setCell(20, 3, 78);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'httpStatus200OnGetAllUsers')
+data.setCell(21, 2, 'BUserTests')
+data.setCell(21, 3, 76);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'patchPasswordById')
+data.setCell(22, 2, 'BUserTests')
+data.setCell(22, 3, 63);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'patchEmailById')
+data.setCell(23, 2, 'BUserTests')
+data.setCell(23, 3, 63);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'contentTypeOnGetCardByIDResponse')
+data.setCell(24, 2, 'CCardTests')
+data.setCell(24, 3, 62);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'headersOnGetAllCardsResponse')
+data.setCell(25, 2, 'CCardTests')
+data.setCell(25, 3, 60);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'headersOnGetAllUsersResponse')
+data.setCell(26, 2, 'BUserTests')
+data.setCell(26, 3, 57);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'postTransactionStatusCode')
+data.setCell(27, 2, 'DTransactionsTests')
+data.setCell(27, 3, 57);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'putCardById')
+data.setCell(28, 2, 'CCardTests')
+data.setCell(28, 3, 56);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'getTransactionStatusCode')
+data.setCell(29, 2, 'DTransactionsTests')
+data.setCell(29, 3, 54);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'fieldsNotNullGetCardByIDResponse')
+data.setCell(30, 2, 'CCardTests')
+data.setCell(30, 3, 54);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'httpStatus200OnGetUserById')
+data.setCell(31, 2, 'BUserTests')
+data.setCell(31, 3, 51);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'postCardWithNullValues')
+data.setCell(32, 2, 'CCardTests')
+data.setCell(32, 3, 50);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'patchAliasById')
+data.setCell(33, 2, 'BUserTests')
+data.setCell(33, 3, 50);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'postTransactionResponseNotEmpty')
+data.setCell(34, 2, 'DTransactionsTests')
+data.setCell(34, 3, 50);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'fieldsNotEmptyGetAllCardsResponse')
+data.setCell(35, 2, 'CCardTests')
+data.setCell(35, 3, 49);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'putCardWithoutAccountIdById')
+data.setCell(36, 2, 'CCardTests')
+data.setCell(36, 3, 49);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'patchUsernameById')
+data.setCell(37, 2, 'BUserTests')
+data.setCell(37, 3, 48);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'postCardWithTypeNullValue')
+data.setCell(38, 2, 'CCardTests')
+data.setCell(38, 3, 47);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'postTransactionWithoutAccountDestinyIdValue')
+data.setCell(39, 2, 'DTransactionsTests')
+data.setCell(39, 3, 47);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'putCardWithEmptyValuesId')
+data.setCell(40, 2, 'CCardTests')
+data.setCell(40, 3, 45);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'fieldsNotNullGetUserByIDResponse')
+data.setCell(41, 2, 'BUserTests')
+data.setCell(41, 3, 45);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'httpStatus200OnGetCardById')
+data.setCell(42, 2, 'CCardTests')
+data.setCell(42, 3, 44);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'fieldsNotEmptyGetUserByIDResponse')
+data.setCell(43, 2, 'BUserTests')
+data.setCell(43, 3, 44);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'postCardWithAccountIdNullValue')
+data.setCell(44, 2, 'CCardTests')
+data.setCell(44, 3, 43);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'fieldsNotNullGetAllUsersResponse')
+data.setCell(45, 2, 'CCardTests')
+data.setCell(45, 3, 38);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'fieldsNotEmptyGetCardByIDResponse')
+data.setCell(46, 2, 'CCardTests')
+data.setCell(46, 3, 36);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'postTransactionWithoutAmountValue')
+data.setCell(47, 2, 'DTransactionsTests')
+data.setCell(47, 3, 36);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'postTransactionWithoutTypeValue')
+data.setCell(48, 2, 'DTransactionsTests')
+data.setCell(48, 3, 36);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'postCardWithoutAccountIdValue')
+data.setCell(49, 2, 'CCardTests')
+data.setCell(49, 3, 35);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'httpStatus200OnGetAllCards')
+data.setCell(50, 2, 'CCardTests')
+data.setCell(50, 3, 33);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'putCardWithoutTypeById')
+data.setCell(51, 2, 'CCardTests')
+data.setCell(51, 3, 33);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'postCardWithoutTypeValue')
+data.setCell(52, 2, 'CCardTests')
+data.setCell(52, 3, 30);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'patchEmptyAliasByAccountId')
+data.setCell(53, 2, 'EAccountsTests')
+data.setCell(53, 3, 25);
+window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <div id="times-div-Surefire_suite">
+              </div> <!-- times-div-Surefire_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Surefire suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Surefire_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">ARegisterTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">registerOkValidateResponse</span>
+                <span class="method-start">1438 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithoutDniResponse</span>
+                <span class="method-start">4728 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">registerWithoutFirstNameResponse</span>
+                <span class="method-start">4827 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerWithoutLastNameResponse</span>
+                <span class="method-start">4944 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">BUserTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">5145 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">contentTypeOnGetAllUsersResponse</span>
+                <span class="method-start">5147 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">contentTypeOnGetUserByIDResponse</span>
+                <span class="method-start">5232 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">fieldsNotEmptyGetAllUsersResponse</span>
+                <span class="method-start">5395 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">fieldsNotEmptyGetUserByIDResponse</span>
+                <span class="method-start">6142 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">fieldsNotNullGetAllUsersResponse</span>
+                <span class="method-start">6189 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">fieldsNotNullGetUserByIDResponse</span>
+                <span class="method-start">6272 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">headersOnGetAllUsersResponse</span>
+                <span class="method-start">6322 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">httpStatus200OnGetAllUsers</span>
+                <span class="method-start">6399 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">httpStatus200OnGetUserById</span>
+                <span class="method-start">6477 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">patchAliasById</span>
+                <span class="method-start">6530 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">patchCvuById</span>
+                <span class="method-start">6583 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">patchEmailById</span>
+                <span class="method-start">6681 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">patchFirstNameById</span>
+                <span class="method-start">6747 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">patchLastNameById</span>
+                <span class="method-start">6831 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">patchPasswordById</span>
+                <span class="method-start">6915 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">patchUsernameById</span>
+                <span class="method-start">6984 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">CCardTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">7034 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">contentTypeOnGetAllCardsResponse</span>
+                <span class="method-start">7037 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">contentTypeOnGetCardByIDResponse</span>
+                <span class="method-start">7165 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">fieldsNotEmptyGetAllCardsResponse</span>
+                <span class="method-start">7229 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">fieldsNotEmptyGetCardByIDResponse</span>
+                <span class="method-start">7282 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">fieldsNotNullGetAllUsersResponse</span>
+                <span class="method-start">7321 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">fieldsNotNullGetCardByIDResponse</span>
+                <span class="method-start">7361 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">headersOnGetAllCardsResponse</span>
+                <span class="method-start">7441 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">httpStatus200OnGetAllCards</span>
+                <span class="method-start">7507 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">httpStatus200OnGetCardById</span>
+                <span class="method-start">7543 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postCardWithAccountIdNullValue</span>
+                <span class="method-start">7589 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postCardWithNullValues</span>
+                <span class="method-start">7644 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postCardWithTypeNullValue</span>
+                <span class="method-start">7699 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postCardWithoutAccountIdValue</span>
+                <span class="method-start">7748 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postCardWithoutTypeValue</span>
+                <span class="method-start">7785 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">putCardById</span>
+                <span class="method-start">7816 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">putCardWithEmptyValuesId</span>
+                <span class="method-start">7875 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">putCardWithoutAccountIdById</span>
+                <span class="method-start">7925 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">putCardWithoutTypeById</span>
+                <span class="method-start">7977 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">DTransactionsTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">8012 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">deleteTransactionByIdStatusCode</span>
+                <span class="method-start">8014 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getTransactionResponseNotEmpty</span>
+                <span class="method-start">8141 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getTransactionResponseNotNull</span>
+                <span class="method-start">8553 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">getTransactionStatusCode</span>
+                <span class="method-start">8862 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postTransactionResponseNotEmpty</span>
+                <span class="method-start">8919 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postTransactionResponseNotNull</span>
+                <span class="method-start">8971 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">postTransactionStatusCode</span>
+                <span class="method-start">9076 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">postTransactionWithNullValues</span>
+                <span class="method-start">9135 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">postTransactionWithoutAccountDestinyIdValue</span>
+                <span class="method-start">9349 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">postTransactionWithoutAccountOriginIdValue</span>
+                <span class="method-start">9429 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">postTransactionWithoutAmountValue</span>
+                <span class="method-start">9527 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">postTransactionWithoutDateValue</span>
+                <span class="method-start">9568 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">postTransactionWithoutDetailValue</span>
+                <span class="method-start">9659 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">postTransactionWithoutTypeValue</span>
+                <span class="method-start">9742 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">EAccountsTests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">9781 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">patchAliasByAccountId</span>
+                <span class="method-start">9783 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">patchEmptyAliasByAccountId</span>
+                <span class="method-start">9963 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

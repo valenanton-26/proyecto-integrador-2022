@@ -1,0 +1,309 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 63, Failures: 44, Errors: 0, Skipped: 0, Time elapsed: 14.184 s <<< FAILURE! - in TestSuite
+registerOkValidateResponse(ARegisterTests)  Time elapsed: 3.008 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at ARegisterTests.registerOkValidateResponse(ARegisterTests.java:46)
+
+contentTypeOnGetUserByIDResponse(BUserTests)  Time elapsed: 0.114 s  <<< FAILURE!
+java.lang.AssertionError: expected [text/plain;charset=UTF-8] but found [application/json]
+	at BUserTests.contentTypeOnGetUserByIDResponse(BUserTests.java:125)
+
+fieldsNotEmptyGetUserByIDResponse(BUserTests)  Time elapsed: 0.057 s  <<< FAILURE!
+io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at BUserTests.fieldsNotEmptyGetUserByIDResponse(BUserTests.java:138)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading 'N', no possible valid JSON value or punctuation could be recognized.
+	at BUserTests.fieldsNotEmptyGetUserByIDResponse(BUserTests.java:138)
+
+fieldsNotNullGetUserByIDResponse(BUserTests)  Time elapsed: 0.05 s  <<< FAILURE!
+io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at BUserTests.fieldsNotNullGetUserByIDResponse(BUserTests.java:157)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading 'N', no possible valid JSON value or punctuation could be recognized.
+	at BUserTests.fieldsNotNullGetUserByIDResponse(BUserTests.java:157)
+
+httpStatus200OnGetUserById(BUserTests)  Time elapsed: 0.07 s  <<< FAILURE!
+java.lang.AssertionError: expected [404] but found [200]
+	at BUserTests.httpStatus200OnGetUserById(BUserTests.java:114)
+
+patchAliasById(BUserTests)  Time elapsed: 0.089 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at BUserTests.patchAliasById(BUserTests.java:273)
+
+patchCvuById(BUserTests)  Time elapsed: 0.074 s  <<< FAILURE!
+io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at BUserTests.patchCvuById(BUserTests.java:258)
+Caused by: java.lang.IllegalArgumentException: The JSON input text should neither be null nor empty.
+	at BUserTests.patchCvuById(BUserTests.java:258)
+
+patchEmailById(BUserTests)  Time elapsed: 0.091 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at BUserTests.patchEmailById(BUserTests.java:209)
+
+patchFirstNameById(BUserTests)  Time elapsed: 0.054 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at BUserTests.patchFirstNameById(BUserTests.java:178)
+
+patchLastNameById(BUserTests)  Time elapsed: 0.126 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at BUserTests.patchLastNameById(BUserTests.java:193)
+
+patchPasswordById(BUserTests)  Time elapsed: 0.031 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at BUserTests.patchPasswordById(BUserTests.java:241)
+
+patchUsernameById(BUserTests)  Time elapsed: 0.047 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at BUserTests.patchUsernameById(BUserTests.java:225)
+
+fieldsNotEmptyGetAllCardsResponse(CCardTests)  Time elapsed: 0.108 s  <<< FAILURE!
+java.lang.RuntimeException: 
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (String)"{"id":3,"accountId":1,"type":"credit","cardNumber":"12345678912345678","owner":"Marcelito","securityNumber":"234","expirationDate":"2022-12-12","balance":200,"lastNumbers":"5678"}"; line: 1, column: 132] (through reference chain: Data.Factory.Cards["expirationDate"])
+	at CCardTests.fieldsNotEmptyGetAllCardsResponse(CCardTests.java:77)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: 
+Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (String)"{"id":3,"accountId":1,"type":"credit","cardNumber":"12345678912345678","owner":"Marcelito","securityNumber":"234","expirationDate":"2022-12-12","balance":200,"lastNumbers":"5678"}"; line: 1, column: 132] (through reference chain: Data.Factory.Cards["expirationDate"])
+	at CCardTests.fieldsNotEmptyGetAllCardsResponse(CCardTests.java:77)
+
+fieldsNotEmptyGetCardByIDResponse(CCardTests)  Time elapsed: 0.085 s  <<< FAILURE!
+java.lang.RuntimeException: 
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (String)"{"id":8,"accountId":1,"type":"credit","cardNumber":"12345678912345678","owner":"Marcelito","securityNumber":"234","expirationDate":"2022-12-12","balance":200,"lastNumbers":"5678"}"; line: 1, column: 132] (through reference chain: Data.Factory.Cards["expirationDate"])
+	at CCardTests.fieldsNotEmptyGetCardByIDResponse(CCardTests.java:135)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: 
+Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (String)"{"id":8,"accountId":1,"type":"credit","cardNumber":"12345678912345678","owner":"Marcelito","securityNumber":"234","expirationDate":"2022-12-12","balance":200,"lastNumbers":"5678"}"; line: 1, column: 132] (through reference chain: Data.Factory.Cards["expirationDate"])
+	at CCardTests.fieldsNotEmptyGetCardByIDResponse(CCardTests.java:135)
+
+fieldsNotNullGetAllUsersResponse(CCardTests)  Time elapsed: 0.09 s  <<< FAILURE!
+java.lang.RuntimeException: 
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (String)"{"id":3,"accountId":1,"type":"credit","cardNumber":"12345678912345678","owner":"Marcelito","securityNumber":"234","expirationDate":"2022-12-12","balance":200,"lastNumbers":"5678"}"; line: 1, column: 132] (through reference chain: Data.Factory.Cards["expirationDate"])
+	at CCardTests.fieldsNotNullGetAllUsersResponse(CCardTests.java:95)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: 
+Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (String)"{"id":3,"accountId":1,"type":"credit","cardNumber":"12345678912345678","owner":"Marcelito","securityNumber":"234","expirationDate":"2022-12-12","balance":200,"lastNumbers":"5678"}"; line: 1, column: 132] (through reference chain: Data.Factory.Cards["expirationDate"])
+	at CCardTests.fieldsNotNullGetAllUsersResponse(CCardTests.java:95)
+
+fieldsNotNullGetCardByIDResponse(CCardTests)  Time elapsed: 0.06 s  <<< FAILURE!
+java.lang.RuntimeException: 
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (String)"{"id":8,"accountId":1,"type":"credit","cardNumber":"12345678912345678","owner":"Marcelito","securityNumber":"234","expirationDate":"2022-12-12","balance":200,"lastNumbers":"5678"}"; line: 1, column: 132] (through reference chain: Data.Factory.Cards["expirationDate"])
+	at CCardTests.fieldsNotNullGetCardByIDResponse(CCardTests.java:151)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: 
+Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (String)"{"id":8,"accountId":1,"type":"credit","cardNumber":"12345678912345678","owner":"Marcelito","securityNumber":"234","expirationDate":"2022-12-12","balance":200,"lastNumbers":"5678"}"; line: 1, column: 132] (through reference chain: Data.Factory.Cards["expirationDate"])
+	at CCardTests.fieldsNotNullGetCardByIDResponse(CCardTests.java:151)
+
+postCard(CCardTests)  Time elapsed: 0.378 s  <<< FAILURE!
+java.lang.RuntimeException: 
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (String)"{"id":11,"accountId":2,"type":"D\u00e9bito","cardNumber":"1234567891234567","owner":"Marcelo Fernandez","securityNumber":"552","expirationDate":"2022-12-31","balance":1200,"lastNumbers":"4567"}"; line: 1, column: 145] (through reference chain: Data.Factory.Cards["expirationDate"])
+	at CCardTests.postCard(CCardTests.java:180)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: 
+Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (String)"{"id":11,"accountId":2,"type":"D\u00e9bito","cardNumber":"1234567891234567","owner":"Marcelo Fernandez","securityNumber":"552","expirationDate":"2022-12-31","balance":1200,"lastNumbers":"4567"}"; line: 1, column: 145] (through reference chain: Data.Factory.Cards["expirationDate"])
+	at CCardTests.postCard(CCardTests.java:180)
+
+putCardById(CCardTests)  Time elapsed: 0.398 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at CCardTests.putCardById(CCardTests.java:205)
+
+putCardWithEmptyValuesId(CCardTests)  Time elapsed: 0.215 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at CCardTests.putCardWithEmptyValuesId(CCardTests.java:257)
+
+putCardWithoutAccountIdById(CCardTests)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at CCardTests.putCardWithoutAccountIdById(CCardTests.java:224)
+
+putCardWithoutTypeById(CCardTests)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at CCardTests.putCardWithoutTypeById(CCardTests.java:240)
+
+createTransferenceNullAmount(DTransactionsTests)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.createTransferenceNullAmount(DTransactionsTests.java:403)
+
+createTransferenceNullDate(DTransactionsTests)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.createTransferenceNullDate(DTransactionsTests.java:424)
+
+createTransferenceNullDestinyAccount(DTransactionsTests)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.createTransferenceNullDestinyAccount(DTransactionsTests.java:382)
+
+createTransferenceNullOriginCard(DTransactionsTests)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.createTransferenceNullOriginCard(DTransactionsTests.java:361)
+
+createTransferenceNullValues(DTransactionsTests)  Time elapsed: 0.058 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.createTransferenceNullValues(DTransactionsTests.java:340)
+
+createTransferenceOk(DTransactionsTests)  Time elapsed: 0.005 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at DTransactionsTests.createTransferenceOk(DTransactionsTests.java:323)
+
+createTransferenceResponse(DTransactionsTests)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at DTransactionsTests.createTransferenceResponse(DTransactionsTests.java:445)
+
+createTransferenceResponseNotNullValues(DTransactionsTests)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at DTransactionsTests.createTransferenceResponseNotNullValues(DTransactionsTests.java:467)
+
+deleteTransactionByIdStatusCode(DTransactionsTests)  Time elapsed: 0.015 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <204> but was <404>.
+
+	at DTransactionsTests.deleteTransactionByIdStatusCode(DTransactionsTests.java:305)
+
+getTransactionResponseNotEmpty(DTransactionsTests)  Time elapsed: 0.036 s  <<< FAILURE!
+java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class java.util.List (java.util.LinkedHashMap and java.util.List are in module java.base of loader 'bootstrap')
+	at DTransactionsTests.getTransactionResponseNotEmpty(DTransactionsTests.java:287)
+
+getTransactionResponseNotNull(DTransactionsTests)  Time elapsed: 0.037 s  <<< FAILURE!
+java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class java.util.List (java.util.LinkedHashMap and java.util.List are in module java.base of loader 'bootstrap')
+	at DTransactionsTests.getTransactionResponseNotNull(DTransactionsTests.java:269)
+
+getTransactionStatusCode(DTransactionsTests)  Time elapsed: 0.023 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at DTransactionsTests.getTransactionStatusCode(DTransactionsTests.java:256)
+
+postTransactionResponseNotEmpty(DTransactionsTests)  Time elapsed: 0.032 s  <<< FAILURE!
+java.lang.RuntimeException: 
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "timestamp" (class Data.Factory.Transactions), not marked as ignorable (7 known properties: "accountDestinyId", "detail", "amount", "type", "id", "accountOriginId", "date"])
+ at [Source: (String)"{"timestamp":"2022-11-24T21:32:09.451+00:00","path":"/transactions","status":404,"error":"Not Found","message":null,"requestId":"4a1ffcdf-322"}"; line: 1, column: 15] (through reference chain: Data.Factory.Transactions["timestamp"])
+	at DTransactionsTests.postTransactionResponseNotEmpty(DTransactionsTests.java:240)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: 
+Unrecognized field "timestamp" (class Data.Factory.Transactions), not marked as ignorable (7 known properties: "accountDestinyId", "detail", "amount", "type", "id", "accountOriginId", "date"])
+ at [Source: (String)"{"timestamp":"2022-11-24T21:32:09.451+00:00","path":"/transactions","status":404,"error":"Not Found","message":null,"requestId":"4a1ffcdf-322"}"; line: 1, column: 15] (through reference chain: Data.Factory.Transactions["timestamp"])
+	at DTransactionsTests.postTransactionResponseNotEmpty(DTransactionsTests.java:240)
+
+postTransactionResponseNotNull(DTransactionsTests)  Time elapsed: 0.095 s  <<< FAILURE!
+java.lang.RuntimeException: 
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "timestamp" (class Data.Factory.Transactions), not marked as ignorable (7 known properties: "accountDestinyId", "detail", "amount", "type", "id", "accountOriginId", "date"])
+ at [Source: (String)"{"timestamp":"2022-11-24T21:32:09.525+00:00","path":"/transactions","status":404,"error":"Not Found","message":null,"requestId":"88ebde2b-323"}"; line: 1, column: 15] (through reference chain: Data.Factory.Transactions["timestamp"])
+	at DTransactionsTests.postTransactionResponseNotNull(DTransactionsTests.java:215)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: 
+Unrecognized field "timestamp" (class Data.Factory.Transactions), not marked as ignorable (7 known properties: "accountDestinyId", "detail", "amount", "type", "id", "accountOriginId", "date"])
+ at [Source: (String)"{"timestamp":"2022-11-24T21:32:09.525+00:00","path":"/transactions","status":404,"error":"Not Found","message":null,"requestId":"88ebde2b-323"}"; line: 1, column: 15] (through reference chain: Data.Factory.Transactions["timestamp"])
+	at DTransactionsTests.postTransactionResponseNotNull(DTransactionsTests.java:215)
+
+postTransactionStatusCode(DTransactionsTests)  Time elapsed: 0.051 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at DTransactionsTests.postTransactionStatusCode(DTransactionsTests.java:194)
+
+postTransactionWithNullValues(DTransactionsTests)  Time elapsed: 0.029 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.postTransactionWithNullValues(DTransactionsTests.java:52)
+
+postTransactionWithoutAccountDestinyIdValue(DTransactionsTests)  Time elapsed: 0.042 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.postTransactionWithoutAccountDestinyIdValue(DTransactionsTests.java:72)
+
+postTransactionWithoutAccountOriginIdValue(DTransactionsTests)  Time elapsed: 0.166 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.postTransactionWithoutAccountOriginIdValue(DTransactionsTests.java:92)
+
+postTransactionWithoutAmountValue(DTransactionsTests)  Time elapsed: 0.036 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.postTransactionWithoutAmountValue(DTransactionsTests.java:113)
+
+postTransactionWithoutDateValue(DTransactionsTests)  Time elapsed: 0.052 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.postTransactionWithoutDateValue(DTransactionsTests.java:133)
+
+postTransactionWithoutDetailValue(DTransactionsTests)  Time elapsed: 0.104 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.postTransactionWithoutDetailValue(DTransactionsTests.java:153)
+
+postTransactionWithoutTypeValue(DTransactionsTests)  Time elapsed: 0.04 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.postTransactionWithoutTypeValue(DTransactionsTests.java:173)
+
+patchAliasByAccountId(EAccountsTests)  Time elapsed: 0.195 s  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at EAccountsTests.patchAliasByAccountId(EAccountsTests.java:45)
+

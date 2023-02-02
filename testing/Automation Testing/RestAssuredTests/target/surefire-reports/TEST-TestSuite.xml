@@ -1,0 +1,1891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="14.184" tests="63" errors="0" skipped="0" failures="44">
+  <properties>
+    <property name="java.specification.version" value="18"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\plugins\maven\lib\maven3\boot\plexus-classworlds-2.6.0.jar;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\plugins\maven\lib\maven3\boot\plexus-classworlds.license"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Buenos_Aires"/>
+    <property name="maven.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\plugins\maven\lib\maven3/conf"/>
+    <property name="java.vm.specification.version" value="18"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="AR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-18.0.1.1\bin"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2022.2.3 test"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\plugins\maven\lib\maven3"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\maria"/>
+    <property name="user.language" value="es"/>
+    <property name="sun.stderr.encoding" value="UTF-8"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-04-22"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-18.0.1.1"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="sun.stdout.encoding" value="UTF-8"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="18.0.1.1+2-6"/>
+    <property name="user.name" value="maria"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\maria\AppData\Local\Temp\"/>
+    <property name="idea.version" value="2022.2.3"/>
+    <property name="java.version" value="18.0.1.1"/>
+    <property name="user.dir" value="C:\Users\maria\Documents\PROYECTO 2\Local\Testing\Automation Testing\RestAssuredTests"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\maria\Documents\PROYECTO 2\Local\Testing\Automation Testing\RestAssuredTests"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-18.0.1.1\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Python310\Scripts\;C:\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Java\jdk-18.0.1.1\bin;C:\Users\maria\Downloads\apache-maven-3.8.6-src\apache-maven-3.8.6\bin;;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Go\bin;C:\Program Files\Kubernetes\Minikube;C:\minikube;C:\Program Files\OpenSSH-Win64;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\maria\.jbang\bin;C:\Users\maria\AppData\Local\Microsoft\WindowsApps;;C:\Users\maria\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\maria\AppData\Roaming\npm;C:\Users\maria\go\bin;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="18.0.1.1+2-6"/>
+    <property name="classworlds.conf" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2022.2.3\plugins\maven\lib\maven3\bin\m2.conf"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="62.0"/>
+  </properties>
+  <testcase name="registerOkValidateResponse" classname="ARegisterTests" time="3.008">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;400&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at ARegisterTests.registerOkValidateResponse(ARegisterTests.java:46)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/user/register
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Lorena",
+    "lastName": "Mendoza",
+    "dni": "22548698",
+    "email": "loremendoza@mail.com",
+    "phoneNumber": "45410582",
+    "username": "loremendoza",
+    "password": "lore1234"
+}
+HTTP/1.1 400 Bad Request
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: text/plain;charset=UTF-8
+Date: Thu, 24 Nov 2022 21:32:04 GMT
+content-length: 45
+
+Ya existe un usario con ese nombre de usuario
+]]></system-out>
+    <system-err><![CDATA[SLF4J: Failed to load class "org.slf4j.impl.StaticLoggerBinder".
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See http://www.slf4j.org/codes.html#StaticLoggerBinder for further details.
+]]></system-err>
+  </testcase>
+  <testcase name="registerWithoutDniResponse" classname="ARegisterTests" time="0.107"/>
+  <testcase name="registerWithoutFirstNameResponse" classname="ARegisterTests" time="0.062"/>
+  <testcase name="registerWithoutLastNameResponse" classname="ARegisterTests" time="0.052"/>
+  <testcase name="contentTypeOnGetAllUsersResponse" classname="BUserTests" time="0.317"/>
+  <testcase name="contentTypeOnGetUserByIDResponse" classname="BUserTests" time="0.114">
+    <failure message="expected [text/plain;charset=UTF-8] but found [application/json]" type="java.lang.AssertionError">java.lang.AssertionError: expected [text/plain;charset=UTF-8] but found [application/json]
+	at BUserTests.contentTypeOnGetUserByIDResponse(BUserTests.java:125)
+</failure>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	http://localhost:8080/user/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: text/plain;charset=UTF-8
+Date: Thu, 24 Nov 2022 21:32:05 GMT
+content-length: 29
+
+No existe usuario con este id
+]]></system-out>
+  </testcase>
+  <testcase name="fieldsNotEmptyGetAllUsersResponse" classname="BUserTests" time="0.825"/>
+  <testcase name="fieldsNotEmptyGetUserByIDResponse" classname="BUserTests" time="0.057">
+    <failure message="Failed to parse the JSON document" type="io.restassured.path.json.exception.JsonPathException">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at BUserTests.fieldsNotEmptyGetUserByIDResponse(BUserTests.java:138)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading 'N', no possible valid JSON value or punctuation could be recognized.
+	at BUserTests.fieldsNotEmptyGetUserByIDResponse(BUserTests.java:138)
+</failure>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	http://localhost:8080/user/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: text/plain;charset=UTF-8
+Date: Thu, 24 Nov 2022 21:32:05 GMT
+content-length: 29
+
+No existe usuario con este id
+]]></system-out>
+  </testcase>
+  <testcase name="fieldsNotNullGetAllUsersResponse" classname="BUserTests" time="0.059"/>
+  <testcase name="fieldsNotNullGetUserByIDResponse" classname="BUserTests" time="0.05">
+    <failure message="Failed to parse the JSON document" type="io.restassured.path.json.exception.JsonPathException">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at BUserTests.fieldsNotNullGetUserByIDResponse(BUserTests.java:157)
+Caused by: groovy.json.JsonException: Lexing failed on line: 1, column: 1, while reading 'N', no possible valid JSON value or punctuation could be recognized.
+	at BUserTests.fieldsNotNullGetUserByIDResponse(BUserTests.java:157)
+</failure>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	http://localhost:8080/user/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: text/plain;charset=UTF-8
+Date: Thu, 24 Nov 2022 21:32:05 GMT
+content-length: 29
+
+No existe usuario con este id
+]]></system-out>
+  </testcase>
+  <testcase name="headersOnGetAllUsersResponse" classname="BUserTests" time="0.067"/>
+  <testcase name="httpStatus200OnGetAllUsers" classname="BUserTests" time="0.064"/>
+  <testcase name="httpStatus200OnGetUserById" classname="BUserTests" time="0.07">
+    <failure message="expected [404] but found [200]" type="java.lang.AssertionError">java.lang.AssertionError: expected [404] but found [200]
+	at BUserTests.httpStatus200OnGetUserById(BUserTests.java:114)
+</failure>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	http://localhost:8080/user/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Content-Type: text/plain;charset=UTF-8
+Date: Thu, 24 Nov 2022 21:32:06 GMT
+content-length: 29
+
+No existe usuario con este id
+]]></system-out>
+  </testcase>
+  <testcase name="patchAliasById" classname="BUserTests" time="0.089">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;400&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at BUserTests.patchAliasById(BUserTests.java:273)
+]]></failure>
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	http://localhost:8080/user/update/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "alias": "rio.seco.bravo"
+}
+HTTP/1.1 400 Bad Request
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Date: Thu, 24 Nov 2022 21:32:06 GMT
+content-length: 0
+]]></system-out>
+  </testcase>
+  <testcase name="patchCvuById" classname="BUserTests" time="0.074">
+    <failure message="Failed to parse the JSON document" type="io.restassured.path.json.exception.JsonPathException">io.restassured.path.json.exception.JsonPathException: Failed to parse the JSON document
+	at BUserTests.patchCvuById(BUserTests.java:258)
+Caused by: java.lang.IllegalArgumentException: The JSON input text should neither be null nor empty.
+	at BUserTests.patchCvuById(BUserTests.java:258)
+</failure>
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	http://localhost:8080/user/update/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "cvu": "123456"
+}
+HTTP/1.1 400 Bad Request
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Date: Thu, 24 Nov 2022 21:32:06 GMT
+content-length: 0
+]]></system-out>
+  </testcase>
+  <testcase name="patchEmailById" classname="BUserTests" time="0.091">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;400&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at BUserTests.patchEmailById(BUserTests.java:209)
+]]></failure>
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	http://localhost:8080/user/update/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "email": "mmendoza@mail.com"
+}
+HTTP/1.1 400 Bad Request
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Date: Thu, 24 Nov 2022 21:32:06 GMT
+content-length: 0
+]]></system-out>
+  </testcase>
+  <testcase name="patchFirstNameById" classname="BUserTests" time="0.054">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;400&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at BUserTests.patchFirstNameById(BUserTests.java:178)
+]]></failure>
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	http://localhost:8080/user/update/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "firstName": "Marcelo Javier"
+}
+HTTP/1.1 400 Bad Request
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Date: Thu, 24 Nov 2022 21:32:06 GMT
+content-length: 0
+]]></system-out>
+  </testcase>
+  <testcase name="patchLastNameById" classname="BUserTests" time="0.126">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;400&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at BUserTests.patchLastNameById(BUserTests.java:193)
+]]></failure>
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	http://localhost:8080/user/update/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "lastName": "Mendoza Roger"
+}
+HTTP/1.1 400 Bad Request
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Date: Thu, 24 Nov 2022 21:32:06 GMT
+content-length: 0
+]]></system-out>
+  </testcase>
+  <testcase name="patchPasswordById" classname="BUserTests" time="0.031">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;400&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at BUserTests.patchPasswordById(BUserTests.java:241)
+]]></failure>
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	http://localhost:8080/user/update/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "password": "mmendoza1234"
+}
+HTTP/1.1 400 Bad Request
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Date: Thu, 24 Nov 2022 21:32:06 GMT
+content-length: 0
+]]></system-out>
+  </testcase>
+  <testcase name="patchUsernameById" classname="BUserTests" time="0.047">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;400&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at BUserTests.patchUsernameById(BUserTests.java:225)
+]]></failure>
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	http://localhost:8080/user/update/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "username": "mmroger"
+}
+HTTP/1.1 400 Bad Request
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+Cache-Control: no-cache, no-store, max-age=0, must-revalidate
+Pragma: no-cache
+Expires: 0
+X-Frame-Options: DENY
+Date: Thu, 24 Nov 2022 21:32:06 GMT
+content-length: 0
+]]></system-out>
+  </testcase>
+  <testcase name="contentTypeOnGetAllCardsResponse" classname="CCardTests" time="0.214"/>
+  <testcase name="contentTypeOnGetCardByIDResponse" classname="CCardTests" time="0.064"/>
+  <testcase name="fieldsNotEmptyGetAllCardsResponse" classname="CCardTests" time="0.108">
+    <failure message="com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module &quot;com.fasterxml.jackson.datatype:jackson-datatype-jsr310&quot; to enable handling&#10; at [Source: (String)&quot;{&quot;id&quot;:3,&quot;accountId&quot;:1,&quot;type&quot;:&quot;credit&quot;,&quot;cardNumber&quot;:&quot;12345678912345678&quot;,&quot;owner&quot;:&quot;Marcelito&quot;,&quot;securityNumber&quot;:&quot;234&quot;,&quot;expirationDate&quot;:&quot;2022-12-12&quot;,&quot;balance&quot;:200,&quot;lastNumbers&quot;:&quot;5678&quot;}&quot;; line: 1, column: 132] (through reference chain: Data.Factory.Cards[&quot;expirationDate&quot;])" type="java.lang.RuntimeException">java.lang.RuntimeException: 
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (String)"{"id":3,"accountId":1,"type":"credit","cardNumber":"12345678912345678","owner":"Marcelito","securityNumber":"234","expirationDate":"2022-12-12","balance":200,"lastNumbers":"5678"}"; line: 1, column: 132] (through reference chain: Data.Factory.Cards["expirationDate"])
+	at CCardTests.fieldsNotEmptyGetAllCardsResponse(CCardTests.java:77)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: 
+Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (String)"{"id":3,"accountId":1,"type":"credit","cardNumber":"12345678912345678","owner":"Marcelito","securityNumber":"234","expirationDate":"2022-12-12","balance":200,"lastNumbers":"5678"}"; line: 1, column: 132] (through reference chain: Data.Factory.Cards["expirationDate"])
+	at CCardTests.fieldsNotEmptyGetAllCardsResponse(CCardTests.java:77)
+</failure>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	http://localhost:8080/cards
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+transfer-encoding: chunked
+Content-Type: application/json
+Date: Thu, 24 Nov 2022 21:32:07 GMT
+
+[
+    {
+        "id": 3,
+        "accountId": 1,
+        "type": "credit",
+        "cardNumber": "12345678912345678",
+        "owner": "Marcelito",
+        "securityNumber": "234",
+        "expirationDate": "2022-12-12",
+        "balance": 200,
+        "lastNumbers": "5678"
+    },
+    {
+        "id": 4,
+        "accountId": 2,
+        "type": "Débito",
+        "cardNumber": "1234567891234567",
+        "owner": "Marcelo Fernandez",
+        "securityNumber": "552",
+        "expirationDate": "2022-12-31",
+        "balance": 1200,
+        "lastNumbers": "4567"
+    },
+    {
+        "id": 5,
+        "accountId": 2,
+        "type": "Débito",
+        "cardNumber": "1234567891234567",
+        "owner": "Marcelo Fernandez",
+        "securityNumber": "552",
+        "expirationDate": "2022-12-31",
+        "balance": 1200,
+        "lastNumbers": "4567"
+    },
+    {
+        "id": 6,
+        "accountId": 2,
+        "type": "Débito",
+        "cardNumber": "1234567891234567",
+        "owner": "Marcelo Fernandez",
+        "securityNumber": "552",
+        "expirationDate": "2022-12-31",
+        "balance": 1200,
+        "lastNumbers": "4567"
+    },
+    {
+        "id": 7,
+        "accountId": 2,
+        "type": "Débito",
+        "cardNumber": "1234567891234567",
+        "owner": "Marcelo Fernandez",
+        "securityNumber": "552",
+        "expirationDate": "2022-12-31",
+        "balance": 1200,
+        "lastNumbers": "4567"
+    },
+    {
+        "id": 8,
+        "accountId": 1,
+        "type": "credit",
+        "cardNumber": "12345678912345678",
+        "owner": "Marcelito",
+        "securityNumber": "234",
+        "expirationDate": "2022-12-12",
+        "balance": 200,
+        "lastNumbers": "5678"
+    },
+    {
+        "id": 9,
+        "accountId": 2,
+        "type": "Débito",
+        "cardNumber": "1234567891234567",
+        "owner": "Marcelo Fernandez",
+        "securityNumber": "552",
+        "expirationDate": "2022-12-31",
+        "balance": 1200,
+        "lastNumbers": "4567"
+    },
+    {
+        "id": 10,
+        "accountId": 2,
+        "type": "Débito",
+        "cardNumber": "1234567891234567",
+        "owner": "Marcelo Fernandez",
+        "securityNumber": "552",
+        "expirationDate": "2022-12-31",
+        "balance": 1200,
+        "lastNumbers": "4567"
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="fieldsNotEmptyGetCardByIDResponse" classname="CCardTests" time="0.085">
+    <failure message="com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module &quot;com.fasterxml.jackson.datatype:jackson-datatype-jsr310&quot; to enable handling&#10; at [Source: (String)&quot;{&quot;id&quot;:8,&quot;accountId&quot;:1,&quot;type&quot;:&quot;credit&quot;,&quot;cardNumber&quot;:&quot;12345678912345678&quot;,&quot;owner&quot;:&quot;Marcelito&quot;,&quot;securityNumber&quot;:&quot;234&quot;,&quot;expirationDate&quot;:&quot;2022-12-12&quot;,&quot;balance&quot;:200,&quot;lastNumbers&quot;:&quot;5678&quot;}&quot;; line: 1, column: 132] (through reference chain: Data.Factory.Cards[&quot;expirationDate&quot;])" type="java.lang.RuntimeException">java.lang.RuntimeException: 
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (String)"{"id":8,"accountId":1,"type":"credit","cardNumber":"12345678912345678","owner":"Marcelito","securityNumber":"234","expirationDate":"2022-12-12","balance":200,"lastNumbers":"5678"}"; line: 1, column: 132] (through reference chain: Data.Factory.Cards["expirationDate"])
+	at CCardTests.fieldsNotEmptyGetCardByIDResponse(CCardTests.java:135)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: 
+Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (String)"{"id":8,"accountId":1,"type":"credit","cardNumber":"12345678912345678","owner":"Marcelito","securityNumber":"234","expirationDate":"2022-12-12","balance":200,"lastNumbers":"5678"}"; line: 1, column: 132] (through reference chain: Data.Factory.Cards["expirationDate"])
+	at CCardTests.fieldsNotEmptyGetCardByIDResponse(CCardTests.java:135)
+</failure>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	http://localhost:8080/cards/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+transfer-encoding: chunked
+Content-Type: application/json
+Date: Thu, 24 Nov 2022 21:32:07 GMT
+
+{
+    "id": 8,
+    "accountId": 1,
+    "type": "credit",
+    "cardNumber": "12345678912345678",
+    "owner": "Marcelito",
+    "securityNumber": "234",
+    "expirationDate": "2022-12-12",
+    "balance": 200,
+    "lastNumbers": "5678"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="fieldsNotNullGetAllUsersResponse" classname="CCardTests" time="0.09">
+    <failure message="com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module &quot;com.fasterxml.jackson.datatype:jackson-datatype-jsr310&quot; to enable handling&#10; at [Source: (String)&quot;{&quot;id&quot;:3,&quot;accountId&quot;:1,&quot;type&quot;:&quot;credit&quot;,&quot;cardNumber&quot;:&quot;12345678912345678&quot;,&quot;owner&quot;:&quot;Marcelito&quot;,&quot;securityNumber&quot;:&quot;234&quot;,&quot;expirationDate&quot;:&quot;2022-12-12&quot;,&quot;balance&quot;:200,&quot;lastNumbers&quot;:&quot;5678&quot;}&quot;; line: 1, column: 132] (through reference chain: Data.Factory.Cards[&quot;expirationDate&quot;])" type="java.lang.RuntimeException">java.lang.RuntimeException: 
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (String)"{"id":3,"accountId":1,"type":"credit","cardNumber":"12345678912345678","owner":"Marcelito","securityNumber":"234","expirationDate":"2022-12-12","balance":200,"lastNumbers":"5678"}"; line: 1, column: 132] (through reference chain: Data.Factory.Cards["expirationDate"])
+	at CCardTests.fieldsNotNullGetAllUsersResponse(CCardTests.java:95)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: 
+Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (String)"{"id":3,"accountId":1,"type":"credit","cardNumber":"12345678912345678","owner":"Marcelito","securityNumber":"234","expirationDate":"2022-12-12","balance":200,"lastNumbers":"5678"}"; line: 1, column: 132] (through reference chain: Data.Factory.Cards["expirationDate"])
+	at CCardTests.fieldsNotNullGetAllUsersResponse(CCardTests.java:95)
+</failure>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	http://localhost:8080/cards
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+transfer-encoding: chunked
+Content-Type: application/json
+Date: Thu, 24 Nov 2022 21:32:07 GMT
+
+[
+    {
+        "id": 3,
+        "accountId": 1,
+        "type": "credit",
+        "cardNumber": "12345678912345678",
+        "owner": "Marcelito",
+        "securityNumber": "234",
+        "expirationDate": "2022-12-12",
+        "balance": 200,
+        "lastNumbers": "5678"
+    },
+    {
+        "id": 4,
+        "accountId": 2,
+        "type": "Débito",
+        "cardNumber": "1234567891234567",
+        "owner": "Marcelo Fernandez",
+        "securityNumber": "552",
+        "expirationDate": "2022-12-31",
+        "balance": 1200,
+        "lastNumbers": "4567"
+    },
+    {
+        "id": 5,
+        "accountId": 2,
+        "type": "Débito",
+        "cardNumber": "1234567891234567",
+        "owner": "Marcelo Fernandez",
+        "securityNumber": "552",
+        "expirationDate": "2022-12-31",
+        "balance": 1200,
+        "lastNumbers": "4567"
+    },
+    {
+        "id": 6,
+        "accountId": 2,
+        "type": "Débito",
+        "cardNumber": "1234567891234567",
+        "owner": "Marcelo Fernandez",
+        "securityNumber": "552",
+        "expirationDate": "2022-12-31",
+        "balance": 1200,
+        "lastNumbers": "4567"
+    },
+    {
+        "id": 7,
+        "accountId": 2,
+        "type": "Débito",
+        "cardNumber": "1234567891234567",
+        "owner": "Marcelo Fernandez",
+        "securityNumber": "552",
+        "expirationDate": "2022-12-31",
+        "balance": 1200,
+        "lastNumbers": "4567"
+    },
+    {
+        "id": 8,
+        "accountId": 1,
+        "type": "credit",
+        "cardNumber": "12345678912345678",
+        "owner": "Marcelito",
+        "securityNumber": "234",
+        "expirationDate": "2022-12-12",
+        "balance": 200,
+        "lastNumbers": "5678"
+    },
+    {
+        "id": 9,
+        "accountId": 2,
+        "type": "Débito",
+        "cardNumber": "1234567891234567",
+        "owner": "Marcelo Fernandez",
+        "securityNumber": "552",
+        "expirationDate": "2022-12-31",
+        "balance": 1200,
+        "lastNumbers": "4567"
+    },
+    {
+        "id": 10,
+        "accountId": 2,
+        "type": "Débito",
+        "cardNumber": "1234567891234567",
+        "owner": "Marcelo Fernandez",
+        "securityNumber": "552",
+        "expirationDate": "2022-12-31",
+        "balance": 1200,
+        "lastNumbers": "4567"
+    }
+]
+]]></system-out>
+  </testcase>
+  <testcase name="fieldsNotNullGetCardByIDResponse" classname="CCardTests" time="0.06">
+    <failure message="com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module &quot;com.fasterxml.jackson.datatype:jackson-datatype-jsr310&quot; to enable handling&#10; at [Source: (String)&quot;{&quot;id&quot;:8,&quot;accountId&quot;:1,&quot;type&quot;:&quot;credit&quot;,&quot;cardNumber&quot;:&quot;12345678912345678&quot;,&quot;owner&quot;:&quot;Marcelito&quot;,&quot;securityNumber&quot;:&quot;234&quot;,&quot;expirationDate&quot;:&quot;2022-12-12&quot;,&quot;balance&quot;:200,&quot;lastNumbers&quot;:&quot;5678&quot;}&quot;; line: 1, column: 132] (through reference chain: Data.Factory.Cards[&quot;expirationDate&quot;])" type="java.lang.RuntimeException">java.lang.RuntimeException: 
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (String)"{"id":8,"accountId":1,"type":"credit","cardNumber":"12345678912345678","owner":"Marcelito","securityNumber":"234","expirationDate":"2022-12-12","balance":200,"lastNumbers":"5678"}"; line: 1, column: 132] (through reference chain: Data.Factory.Cards["expirationDate"])
+	at CCardTests.fieldsNotNullGetCardByIDResponse(CCardTests.java:151)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: 
+Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (String)"{"id":8,"accountId":1,"type":"credit","cardNumber":"12345678912345678","owner":"Marcelito","securityNumber":"234","expirationDate":"2022-12-12","balance":200,"lastNumbers":"5678"}"; line: 1, column: 132] (through reference chain: Data.Factory.Cards["expirationDate"])
+	at CCardTests.fieldsNotNullGetCardByIDResponse(CCardTests.java:151)
+</failure>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	http://localhost:8080/cards/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+transfer-encoding: chunked
+Content-Type: application/json
+Date: Thu, 24 Nov 2022 21:32:07 GMT
+
+{
+    "id": 8,
+    "accountId": 1,
+    "type": "credit",
+    "cardNumber": "12345678912345678",
+    "owner": "Marcelito",
+    "securityNumber": "234",
+    "expirationDate": "2022-12-12",
+    "balance": 200,
+    "lastNumbers": "5678"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="headersOnGetAllCardsResponse" classname="CCardTests" time="0.283"/>
+  <testcase name="httpStatus200OnGetAllCards" classname="CCardTests" time="0.021"/>
+  <testcase name="httpStatus200OnGetCardById" classname="CCardTests" time="0.002"/>
+  <testcase name="postCard" classname="CCardTests" time="0.378">
+    <failure message="com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module &quot;com.fasterxml.jackson.datatype:jackson-datatype-jsr310&quot; to enable handling&#10; at [Source: (String)&quot;{&quot;id&quot;:11,&quot;accountId&quot;:2,&quot;type&quot;:&quot;D\u00e9bito&quot;,&quot;cardNumber&quot;:&quot;1234567891234567&quot;,&quot;owner&quot;:&quot;Marcelo Fernandez&quot;,&quot;securityNumber&quot;:&quot;552&quot;,&quot;expirationDate&quot;:&quot;2022-12-31&quot;,&quot;balance&quot;:1200,&quot;lastNumbers&quot;:&quot;4567&quot;}&quot;; line: 1, column: 145] (through reference chain: Data.Factory.Cards[&quot;expirationDate&quot;])" type="java.lang.RuntimeException">java.lang.RuntimeException: 
+com.fasterxml.jackson.databind.exc.InvalidDefinitionException: Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (String)"{"id":11,"accountId":2,"type":"D\u00e9bito","cardNumber":"1234567891234567","owner":"Marcelo Fernandez","securityNumber":"552","expirationDate":"2022-12-31","balance":1200,"lastNumbers":"4567"}"; line: 1, column: 145] (through reference chain: Data.Factory.Cards["expirationDate"])
+	at CCardTests.postCard(CCardTests.java:180)
+Caused by: com.fasterxml.jackson.databind.exc.InvalidDefinitionException: 
+Java 8 date/time type `java.time.LocalDate` not supported by default: add Module "com.fasterxml.jackson.datatype:jackson-datatype-jsr310" to enable handling
+ at [Source: (String)"{"id":11,"accountId":2,"type":"D\u00e9bito","cardNumber":"1234567891234567","owner":"Marcelo Fernandez","securityNumber":"552","expirationDate":"2022-12-31","balance":1200,"lastNumbers":"4567"}"; line: 1, column: 145] (through reference chain: Data.Factory.Cards["expirationDate"])
+	at CCardTests.postCard(CCardTests.java:180)
+</failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/cards
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accountId": "2",
+    "cardNumber": "1234567891234567",
+    "owner": "Marcelo Fernandez",
+    "securityNumber": "552",
+    "expirationDate": "2022-12-31",
+    "lastNumbers": "4567",
+    "balance": "1200",
+    "type": "Débito"
+}
+HTTP/1.1 200 OK
+transfer-encoding: chunked
+Content-Type: application/json
+Date: Thu, 24 Nov 2022 21:32:08 GMT
+
+{
+    "id": 11,
+    "accountId": 2,
+    "type": "Débito",
+    "cardNumber": "1234567891234567",
+    "owner": "Marcelo Fernandez",
+    "securityNumber": "552",
+    "expirationDate": "2022-12-31",
+    "balance": 1200,
+    "lastNumbers": "4567"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postCardWithAccountIdNullValue" classname="CCardTests" time="0.067"/>
+  <testcase name="postCardWithNullValues" classname="CCardTests" time="0.051"/>
+  <testcase name="postCardWithTypeNullValue" classname="CCardTests" time="0.038"/>
+  <testcase name="postCardWithoutAccountIdValue" classname="CCardTests" time="0.061"/>
+  <testcase name="postCardWithoutTypeValue" classname="CCardTests" time="0.047"/>
+  <testcase name="putCardById" classname="CCardTests" time="0.398">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;400&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <400>.
+
+	at CCardTests.putCardById(CCardTests.java:205)
+]]></failure>
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	http://localhost:8080/cards/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accountId": "2",
+    "cardNumbers": "1234567891234567",
+    "owner": "Marcelo Lopez",
+    "securityNumber": "552",
+    "expirationDate": "2022-12-31",
+    "lastNumbers": "4567",
+    "balance": "200.0",
+    "type": "Débito"
+}
+HTTP/1.1 400 Bad Request
+transfer-encoding: chunked
+Content-Type: application/json
+Date: Thu, 24 Nov 2022 21:32:08 GMT
+
+{
+    "timestamp": "2022-11-24T21:32:08.694+00:00",
+    "status": 400,
+    "error": "Bad Request",
+    "trace": "org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String \"200.0\": not a valid `java.lang.Integer` value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String \"200.0\": not a valid `java.lang.Integer` value\n at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 8, column: 13] (through reference chain: dh.pi.cardservice.entity.Card[\"balance\"])\r\n\tat org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:391)\r\n\tat org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.read(AbstractJackson2HttpMessageConverter.java:343)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodArgumentResolver.readWithMessageConverters(AbstractMessageConverterMethodArgumentResolver.java:185)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.readWithMessageConverters(RequestResponseBodyMethodProcessor.java:160)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.resolveArgument(RequestResponseBodyMethodProcessor.java:133)\r\n\tat org.springframework.web.method.support.HandlerMethodArgumentResolverComposite.resolveArgument(HandlerMethodArgumentResolverComposite.java:122)\r\n\tat org.springframework.web.method.support.InvocableHandlerMethod.getMethodArgumentValues(InvocableHandlerMethod.java:179)\r\n\tat org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:146)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)\r\n\tat org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)\r\n\tat org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)\r\n\tat org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1071)\r\n\tat org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:964)\r\n\tat org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)\r\n\tat org.springframework.web.servlet.FrameworkServlet.doPut(FrameworkServlet.java:920)\r\n\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:699)\r\n\tat org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)\r\n\tat javax.servlet.http.HttpServlet.service(HttpServlet.java:779)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\r\n\tat org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\r\n\tat org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\r\n\tat org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\r\n\tat org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\r\n\tat org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)\r\n\tat org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)\r\n\tat org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)\r\n\tat org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)\r\n\tat org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)\r\n\tat org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541)\r\n\tat org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)\r\n\tat org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)\r\n\tat org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)\r\n\tat org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:360)\r\n\tat org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)\r\n\tat org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)\r\n\tat org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:893)\r\n\tat org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1789)\r\n\tat org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)\r\n\tat org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)\r\n\tat org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)\r\n\tat org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)\r\n\tat java.base/java.lang.Thread.run(Thread.java:1589)\r\nCaused by: com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String \"200.0\": not a valid `java.lang.Integer` value\n at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 8, column: 13] (through reference chain: dh.pi.cardservice.entity.Card[\"balance\"])\r\n\tat com.fasterxml.jackson.databind.exc.InvalidFormatException.from(InvalidFormatException.java:67)\r\n\tat com.fasterxml.jackson.databind.DeserializationContext.weirdStringException(DeserializationContext.java:1991)\r\n\tat com.fasterxml.jackson.databind.DeserializationContext.handleWeirdStringValue(DeserializationContext.java:1219)\r\n\tat com.fasterxml.jackson.databind.deser.std.StdDeserializer._parseInteger(StdDeserializer.java:844)\r\n\tat com.fasterxml.jackson.databind.deser.std.StdDeserializer._parseInteger(StdDeserializer.java:824)\r\n\tat com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:531)\r\n\tat com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer.deserialize(NumberDeserializers.java:506)\r\n\tat com.fasterxml.jackson.databind.deser.impl.MethodProperty.deserializeAndSet(MethodProperty.java:129)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserializeFromObject(BeanDeserializer.java:392)\r\n\tat com.fasterxml.jackson.databind.deser.BeanDeserializer.deserialize(BeanDeserializer.java:185)\r\n\tat com.fasterxml.jackson.databind.deser.DefaultDeserializationContext.readRootValue(DefaultDeserializationContext.java:323)\r\n\tat com.fasterxml.jackson.databind.ObjectMapper._readMapAndClose(ObjectMapper.java:4674)\r\n\tat com.fasterxml.jackson.databind.ObjectMapper.readValue(ObjectMapper.java:3682)\r\n\tat org.springframework.http.converter.json.AbstractJackson2HttpMessageConverter.readJavaType(AbstractJackson2HttpMessageConverter.java:380)\r\n\t... 55 more\r\n",
+    "message": "JSON parse error: Cannot deserialize value of type `java.lang.Integer` from String \"200.0\": not a valid `java.lang.Integer` value; nested exception is com.fasterxml.jackson.databind.exc.InvalidFormatException: Cannot deserialize value of type `java.lang.Integer` from String \"200.0\": not a valid `java.lang.Integer` value\n at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 8, column: 13] (through reference chain: dh.pi.cardservice.entity.Card[\"balance\"])",
+    "path": "/cards/8"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="putCardWithEmptyValuesId" classname="CCardTests" time="0.215">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at CCardTests.putCardWithEmptyValuesId(CCardTests.java:257)
+</failure>
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	http://localhost:8080/cards/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accountId": "",
+    "type": ""
+}
+HTTP/1.1 400 Bad Request
+Content-Type: text/plain;charset=UTF-8
+Date: Thu, 24 Nov 2022 21:32:08 GMT
+content-length: 35
+
+Falta completar el campo account id
+]]></system-out>
+  </testcase>
+  <testcase name="putCardWithoutAccountIdById" classname="CCardTests" time="0.001">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at CCardTests.putCardWithoutAccountIdById(CCardTests.java:224)
+</failure>
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	http://localhost:8080/cards/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "type": "Crédito"
+}
+HTTP/1.1 400 Bad Request
+Content-Type: text/plain;charset=UTF-8
+Date: Thu, 24 Nov 2022 21:32:08 GMT
+content-length: 35
+
+Falta completar el campo account id
+]]></system-out>
+  </testcase>
+  <testcase name="putCardWithoutTypeById" classname="CCardTests" time="0.001">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError">java.lang.AssertionError: expected [true] but found [false]
+	at CCardTests.putCardWithoutTypeById(CCardTests.java:240)
+</failure>
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	http://localhost:8080/cards/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accountId": "1"
+}
+HTTP/1.1 400 Bad Request
+Content-Type: text/plain;charset=UTF-8
+Date: Thu, 24 Nov 2022 21:32:08 GMT
+content-length: 29
+
+Falta completar el campo tipo
+]]></system-out>
+  </testcase>
+  <testcase name="createTransferenceNullAmount" classname="DTransactionsTests" time="0.002">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.createTransferenceNullAmount(DTransactionsTests.java:403)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/transactions/8/transferences
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "OriginCardId": "1",
+    "destinyAccountId": "2",
+    "amount": "null",
+    "date": " 2020-10-22"
+}
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 159
+
+{
+    "timestamp": "2022-11-24T21:32:08.980+00:00",
+    "path": "/transactions/8/transferences",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "06ea669c-310"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createTransferenceNullDate" classname="DTransactionsTests" time="0.001">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.createTransferenceNullDate(DTransactionsTests.java:424)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/transactions/8/transferences
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "OriginCardId": "1",
+    "destinyAccountId": "2",
+    "amount": "150.0",
+    "date": " null"
+}
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 159
+
+{
+    "timestamp": "2022-11-24T21:32:09.029+00:00",
+    "path": "/transactions/8/transferences",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "9ea63b0b-311"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createTransferenceNullDestinyAccount" classname="DTransactionsTests" time="0.001">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.createTransferenceNullDestinyAccount(DTransactionsTests.java:382)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/transactions/8/transferences
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "OriginCardId": "1",
+    "destinyAccountId": "null",
+    "amount": "150.0",
+    "date": " 2020-10-22"
+}
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 159
+
+{
+    "timestamp": "2022-11-24T21:32:09.070+00:00",
+    "path": "/transactions/8/transferences",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "328304c3-312"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createTransferenceNullOriginCard" classname="DTransactionsTests" time="0.001">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.createTransferenceNullOriginCard(DTransactionsTests.java:361)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/transactions/8/transferences
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "OriginCardId": "null",
+    "destinyAccountId": "2",
+    "amount": "150.0",
+    "date": " 2020-10-22"
+}
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 159
+
+{
+    "timestamp": "2022-11-24T21:32:09.112+00:00",
+    "path": "/transactions/8/transferences",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "57b6b8b1-313"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createTransferenceNullValues" classname="DTransactionsTests" time="0.058">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.createTransferenceNullValues(DTransactionsTests.java:340)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/transactions/8/transferences
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "OriginCardId": "null",
+    "destinyAccountId": "null",
+    "amount": "null",
+    "date": " null"
+}
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 159
+
+{
+    "timestamp": "2022-11-24T21:32:09.145+00:00",
+    "path": "/transactions/8/transferences",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "ec98bcdb-314"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createTransferenceOk" classname="DTransactionsTests" time="0.005">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at DTransactionsTests.createTransferenceOk(DTransactionsTests.java:323)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/transactions/8/transferences
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "OriginCardId": "2",
+    "destinyAccountId": "1",
+    "amount": "150.0",
+    "date": " 2022-11-10"
+}
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 159
+
+{
+    "timestamp": "2022-11-24T21:32:09.215+00:00",
+    "path": "/transactions/8/transferences",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "8e8d9614-315"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createTransferenceResponse" classname="DTransactionsTests" time="0.001">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at DTransactionsTests.createTransferenceResponse(DTransactionsTests.java:445)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/transactions/8/transferences
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "OriginCardId": "1",
+    "destinyAccountId": "2",
+    "amount": "150.0",
+    "date": " 2022-11-26"
+}
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 159
+
+{
+    "timestamp": "2022-11-24T21:32:09.252+00:00",
+    "path": "/transactions/8/transferences",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "74e70495-316"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createTransferenceResponseNotNullValues" classname="DTransactionsTests" time="0.001">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at DTransactionsTests.createTransferenceResponseNotNullValues(DTransactionsTests.java:467)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/transactions/8/transferences
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "OriginCardId": "1",
+    "destinyAccountId": "2",
+    "amount": "150.0",
+    "date": " 2022-11-26"
+}
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 159
+
+{
+    "timestamp": "2022-11-24T21:32:09.286+00:00",
+    "path": "/transactions/8/transferences",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "71b10844-317"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="deleteTransactionByIdStatusCode" classname="DTransactionsTests" time="0.015">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;204&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <204> but was <404>.
+
+	at DTransactionsTests.deleteTransactionByIdStatusCode(DTransactionsTests.java:305)
+]]></failure>
+    <system-out><![CDATA[Request method:	DELETE
+Request URI:	http://localhost:8080/transactions/8
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 145
+
+{
+    "timestamp": "2022-11-24T21:32:09.320+00:00",
+    "path": "/transactions/8",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "133eefce-318"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="getTransactionResponseNotEmpty" classname="DTransactionsTests" time="0.036">
+    <failure message="class java.util.LinkedHashMap cannot be cast to class java.util.List (java.util.LinkedHashMap and java.util.List are in module java.base of loader &apos;bootstrap&apos;)" type="java.lang.ClassCastException">java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class java.util.List (java.util.LinkedHashMap and java.util.List are in module java.base of loader 'bootstrap')
+	at DTransactionsTests.getTransactionResponseNotEmpty(DTransactionsTests.java:287)
+</failure>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	http://localhost:8080/transactions
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 143
+
+{
+    "timestamp": "2022-11-24T21:32:09.361+00:00",
+    "path": "/transactions",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "11873f9a-319"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="getTransactionResponseNotNull" classname="DTransactionsTests" time="0.037">
+    <failure message="class java.util.LinkedHashMap cannot be cast to class java.util.List (java.util.LinkedHashMap and java.util.List are in module java.base of loader &apos;bootstrap&apos;)" type="java.lang.ClassCastException">java.lang.ClassCastException: class java.util.LinkedHashMap cannot be cast to class java.util.List (java.util.LinkedHashMap and java.util.List are in module java.base of loader 'bootstrap')
+	at DTransactionsTests.getTransactionResponseNotNull(DTransactionsTests.java:269)
+</failure>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	http://localhost:8080/transactions
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 143
+
+{
+    "timestamp": "2022-11-24T21:32:09.400+00:00",
+    "path": "/transactions",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "333cce71-320"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="getTransactionStatusCode" classname="DTransactionsTests" time="0.023">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at DTransactionsTests.getTransactionStatusCode(DTransactionsTests.java:256)
+]]></failure>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	http://localhost:8080/transactions
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 143
+
+{
+    "timestamp": "2022-11-24T21:32:09.426+00:00",
+    "path": "/transactions",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "b4210e93-321"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postTransactionResponseNotEmpty" classname="DTransactionsTests" time="0.032">
+    <failure message="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;timestamp&quot; (class Data.Factory.Transactions), not marked as ignorable (7 known properties: &quot;accountDestinyId&quot;, &quot;detail&quot;, &quot;amount&quot;, &quot;type&quot;, &quot;id&quot;, &quot;accountOriginId&quot;, &quot;date&quot;])&#10; at [Source: (String)&quot;{&quot;timestamp&quot;:&quot;2022-11-24T21:32:09.451+00:00&quot;,&quot;path&quot;:&quot;/transactions&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:null,&quot;requestId&quot;:&quot;4a1ffcdf-322&quot;}&quot;; line: 1, column: 15] (through reference chain: Data.Factory.Transactions[&quot;timestamp&quot;])" type="java.lang.RuntimeException">java.lang.RuntimeException: 
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "timestamp" (class Data.Factory.Transactions), not marked as ignorable (7 known properties: "accountDestinyId", "detail", "amount", "type", "id", "accountOriginId", "date"])
+ at [Source: (String)"{"timestamp":"2022-11-24T21:32:09.451+00:00","path":"/transactions","status":404,"error":"Not Found","message":null,"requestId":"4a1ffcdf-322"}"; line: 1, column: 15] (through reference chain: Data.Factory.Transactions["timestamp"])
+	at DTransactionsTests.postTransactionResponseNotEmpty(DTransactionsTests.java:240)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: 
+Unrecognized field "timestamp" (class Data.Factory.Transactions), not marked as ignorable (7 known properties: "accountDestinyId", "detail", "amount", "type", "id", "accountOriginId", "date"])
+ at [Source: (String)"{"timestamp":"2022-11-24T21:32:09.451+00:00","path":"/transactions","status":404,"error":"Not Found","message":null,"requestId":"4a1ffcdf-322"}"; line: 1, column: 15] (through reference chain: Data.Factory.Transactions["timestamp"])
+	at DTransactionsTests.postTransactionResponseNotEmpty(DTransactionsTests.java:240)
+</failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/transactions
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accountOriginId": "2",
+    "accountDestinyId": "1",
+    "amount": "150.0",
+    "date": " 2022-11-10",
+    "detail": "Cuota",
+    "type": "Débito"
+}
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 143
+
+{
+    "timestamp": "2022-11-24T21:32:09.451+00:00",
+    "path": "/transactions",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "4a1ffcdf-322"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postTransactionResponseNotNull" classname="DTransactionsTests" time="0.095">
+    <failure message="com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field &quot;timestamp&quot; (class Data.Factory.Transactions), not marked as ignorable (7 known properties: &quot;accountDestinyId&quot;, &quot;detail&quot;, &quot;amount&quot;, &quot;type&quot;, &quot;id&quot;, &quot;accountOriginId&quot;, &quot;date&quot;])&#10; at [Source: (String)&quot;{&quot;timestamp&quot;:&quot;2022-11-24T21:32:09.525+00:00&quot;,&quot;path&quot;:&quot;/transactions&quot;,&quot;status&quot;:404,&quot;error&quot;:&quot;Not Found&quot;,&quot;message&quot;:null,&quot;requestId&quot;:&quot;88ebde2b-323&quot;}&quot;; line: 1, column: 15] (through reference chain: Data.Factory.Transactions[&quot;timestamp&quot;])" type="java.lang.RuntimeException">java.lang.RuntimeException: 
+com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: Unrecognized field "timestamp" (class Data.Factory.Transactions), not marked as ignorable (7 known properties: "accountDestinyId", "detail", "amount", "type", "id", "accountOriginId", "date"])
+ at [Source: (String)"{"timestamp":"2022-11-24T21:32:09.525+00:00","path":"/transactions","status":404,"error":"Not Found","message":null,"requestId":"88ebde2b-323"}"; line: 1, column: 15] (through reference chain: Data.Factory.Transactions["timestamp"])
+	at DTransactionsTests.postTransactionResponseNotNull(DTransactionsTests.java:215)
+Caused by: com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException: 
+Unrecognized field "timestamp" (class Data.Factory.Transactions), not marked as ignorable (7 known properties: "accountDestinyId", "detail", "amount", "type", "id", "accountOriginId", "date"])
+ at [Source: (String)"{"timestamp":"2022-11-24T21:32:09.525+00:00","path":"/transactions","status":404,"error":"Not Found","message":null,"requestId":"88ebde2b-323"}"; line: 1, column: 15] (through reference chain: Data.Factory.Transactions["timestamp"])
+	at DTransactionsTests.postTransactionResponseNotNull(DTransactionsTests.java:215)
+</failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/transactions
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accountOriginId": "2",
+    "accountDestinyId": "1",
+    "amount": "150.0",
+    "date": " 2022-11-10",
+    "detail": "Cuota",
+    "type": "Débito"
+}
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 143
+
+{
+    "timestamp": "2022-11-24T21:32:09.525+00:00",
+    "path": "/transactions",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "88ebde2b-323"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postTransactionStatusCode" classname="DTransactionsTests" time="0.051">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at DTransactionsTests.postTransactionStatusCode(DTransactionsTests.java:194)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/transactions
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accountOriginId": "2",
+    "accountDestinyId": "1",
+    "amount": "150.0",
+    "date": " 2022-11-10",
+    "detail": "Cuota",
+    "type": "Débito"
+}
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 143
+
+{
+    "timestamp": "2022-11-24T21:32:09.602+00:00",
+    "path": "/transactions",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "dce9a262-324"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postTransactionWithNullValues" classname="DTransactionsTests" time="0.029">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.postTransactionWithNullValues(DTransactionsTests.java:52)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/transactions
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accountOriginId": null,
+    "accountDestinyId": null,
+    "amount": null,
+    "date": null,
+    "detail": null,
+    "type": null
+}
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 143
+
+{
+    "timestamp": "2022-11-24T21:32:09.641+00:00",
+    "path": "/transactions",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "15e72875-325"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postTransactionWithoutAccountDestinyIdValue" classname="DTransactionsTests" time="0.042">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.postTransactionWithoutAccountDestinyIdValue(DTransactionsTests.java:72)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/transactions
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accountOriginId": "2",
+    "amount": "150.0",
+    "date": " 2022-11-10",
+    "detail": "Cuota",
+    "type": "Débito"
+}
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 143
+
+{
+    "timestamp": "2022-11-24T21:32:09.671+00:00",
+    "path": "/transactions",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "367b77d0-326"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postTransactionWithoutAccountOriginIdValue" classname="DTransactionsTests" time="0.166">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.postTransactionWithoutAccountOriginIdValue(DTransactionsTests.java:92)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/transactions
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accountDestinyId": "2",
+    "amount": "150.0",
+    "date": " 2022-11-10",
+    "detail": "Cuota",
+    "type": "Débito"
+}
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 143
+
+{
+    "timestamp": "2022-11-24T21:32:09.837+00:00",
+    "path": "/transactions",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "9a1484c2-327"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postTransactionWithoutAmountValue" classname="DTransactionsTests" time="0.036">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.postTransactionWithoutAmountValue(DTransactionsTests.java:113)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/transactions
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accountOriginId": "2",
+    "accountDestinyId": "1",
+    "date": " 2022-11-10",
+    "detail": "Cuota",
+    "type": "Débito"
+}
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 143
+
+{
+    "timestamp": "2022-11-24T21:32:09.880+00:00",
+    "path": "/transactions",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "6be01e16-328"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postTransactionWithoutDateValue" classname="DTransactionsTests" time="0.052">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.postTransactionWithoutDateValue(DTransactionsTests.java:133)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/transactions
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accountOriginId": "2",
+    "accountDestinyId": "1",
+    "amount": "150.0",
+    "detail": "Cuota",
+    "type": "Débito"
+}
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 143
+
+{
+    "timestamp": "2022-11-24T21:32:09.926+00:00",
+    "path": "/transactions",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "fda931d9-329"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postTransactionWithoutDetailValue" classname="DTransactionsTests" time="0.104">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.postTransactionWithoutDetailValue(DTransactionsTests.java:153)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/transactions
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accountOriginId": "2",
+    "accountDestinyId": "1",
+    "amount": "150.0",
+    "date": " 2022-11-10",
+    "type": "Débito"
+}
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 143
+
+{
+    "timestamp": "2022-11-24T21:32:10.041+00:00",
+    "path": "/transactions",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "207f26ee-330"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="postTransactionWithoutTypeValue" classname="DTransactionsTests" time="0.04">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;400&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <400> but was <404>.
+
+	at DTransactionsTests.postTransactionWithoutTypeValue(DTransactionsTests.java:173)
+]]></failure>
+    <system-out><![CDATA[Request method:	POST
+Request URI:	http://localhost:8080/transactions
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "accountOriginId": "2",
+    "accountDestinyId": "1",
+    "amount": "150.0",
+    "date": " 2022-11-10",
+    "detail": "Cuota"
+}
+HTTP/1.1 404 Not Found
+Content-Type: application/json
+Content-Length: 143
+
+{
+    "timestamp": "2022-11-24T21:32:10.087+00:00",
+    "path": "/transactions",
+    "status": 404,
+    "error": "Not Found",
+    "message": null,
+    "requestId": "780bc32f-331"
+}
+]]></system-out>
+  </testcase>
+  <testcase name="patchAliasByAccountId" classname="EAccountsTests" time="0.195">
+    <failure message="1 expectation failed.&#10;Expected status code &lt;200&gt; but was &lt;404&gt;.&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <200> but was <404>.
+
+	at EAccountsTests.patchAliasByAccountId(EAccountsTests.java:45)
+]]></failure>
+    <system-out><![CDATA[Request method:	PATCH
+Request URI:	http://localhost:8080/account/7
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "alias": "baul.cinco.tarjeta"
+}
+HTTP/1.1 404 Not Found
+Content-Type: text/plain;charset=UTF-8
+Date: Thu, 24 Nov 2022 21:32:10 GMT
+content-length: 33
+
+No se encontro cuenta con este id
+]]></system-out>
+  </testcase>
+  <testcase name="patchEmptyAliasByAccountId" classname="EAccountsTests" time="0.055"/>
+</testsuite>

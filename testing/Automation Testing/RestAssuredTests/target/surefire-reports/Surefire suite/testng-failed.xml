@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
+  <test thread-count="1" name="Surefire test(failed)" verbose="0">
+    <classes>
+      <class name="ARegisterTests">
+        <methods>
+          <include name="registerOkValidateResponse"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- ARegisterTests -->
+      <class name="BUserTests">
+        <methods>
+          <include name="patchFirstNameById"/>
+          <include name="setUp"/>
+          <include name="fieldsNotEmptyGetUserByIDResponse"/>
+          <include name="patchUsernameById"/>
+          <include name="patchAliasById"/>
+          <include name="contentTypeOnGetUserByIDResponse"/>
+          <include name="patchLastNameById"/>
+          <include name="patchEmailById"/>
+          <include name="patchCvuById"/>
+          <include name="httpStatus200OnGetUserById"/>
+          <include name="patchPasswordById"/>
+          <include name="fieldsNotNullGetUserByIDResponse"/>
+        </methods>
+      </class> <!-- BUserTests -->
+      <class name="DTransactionsTests">
+        <methods>
+          <include name="postTransactionResponseNotEmpty"/>
+          <include name="postTransactionWithNullValues"/>
+          <include name="setUp"/>
+          <include name="createTransferenceOk"/>
+          <include name="getTransactionResponseNotNull"/>
+          <include name="postTransactionResponseNotNull"/>
+          <include name="createTransferenceNullDestinyAccount"/>
+          <include name="postTransactionWithoutDetailValue"/>
+          <include name="postTransactionWithoutAccountDestinyIdValue"/>
+          <include name="createTransferenceResponseNotNullValues"/>
+          <include name="createTransferenceNullAmount"/>
+          <include name="createTransferenceNullValues"/>
+          <include name="postTransactionWithoutDateValue"/>
+          <include name="createTransferenceResponse"/>
+          <include name="getTransactionStatusCode"/>
+          <include name="postTransactionWithoutTypeValue"/>
+          <include name="createTransferenceNullOriginCard"/>
+          <include name="createTransferenceNullDate"/>
+          <include name="postTransactionWithoutAmountValue"/>
+          <include name="deleteTransactionByIdStatusCode"/>
+          <include name="getTransactionResponseNotEmpty"/>
+          <include name="postTransactionStatusCode"/>
+          <include name="postTransactionWithoutAccountOriginIdValue"/>
+        </methods>
+      </class> <!-- DTransactionsTests -->
+      <class name="EAccountsTests">
+        <methods>
+          <include name="setUp"/>
+          <include name="patchAliasByAccountId"/>
+        </methods>
+      </class> <!-- EAccountsTests -->
+      <class name="CCardTests">
+        <methods>
+          <include name="putCardWithoutAccountIdById"/>
+          <include name="fieldsNotEmptyGetAllCardsResponse"/>
+          <include name="fieldsNotNullGetAllUsersResponse"/>
+          <include name="postCard"/>
+          <include name="fieldsNotNullGetCardByIDResponse"/>
+          <include name="putCardById"/>
+          <include name="putCardWithEmptyValuesId"/>
+          <include name="setUp"/>
+          <include name="putCardWithoutTypeById"/>
+          <include name="fieldsNotEmptyGetCardByIDResponse"/>
+        </methods>
+      </class> <!-- CCardTests -->
+    </classes>
+  </test> <!-- Surefire test(failed) -->
+</suite> <!-- Failed suite [Surefire suite] -->

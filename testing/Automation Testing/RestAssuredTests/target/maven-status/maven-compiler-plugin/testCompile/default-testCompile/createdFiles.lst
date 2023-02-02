@@ -1,0 +1,12 @@
+BUserTests.class
+CCardTests.class
+Data\Factory\Cards.class
+Model\BaseTest.class
+DTransactionsTests.class
+Data\Factory\Transference.class
+Data\Factory\Accounts.class
+Data\Factory\User.class
+Data\Factory\Transactions.class
+EAccountsTests.class
+ARegisterTests.class
+Data\Factory\AliasCvu.class
